@@ -214,3 +214,4 @@ Create `.env.local`:
 FASTAPI_URL=http://localhost:8000
 ECMWF_API_KEY=your_ecmwf_api_key
 ```
+
