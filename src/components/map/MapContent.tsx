@@ -12,22 +12,19 @@ import {
   getHazardColor,
   LULC_CLASSES,
   GEOLOGY_CLASSES,
+  STREET_ZOOM_THRESHOLD,
 } from "@/lib/constants";
 import HazardLegend from "./HazardLegend";
 import ScaleBar from "./ScaleBar";
+import { TILE_URL, TILE_ATTRIBUTION, MAX_ZOOM } from "@/lib/constants";
 
-// Flood hazard level color mapping (matches legend in image):
-// Very Low  → Green   (#22c55e)  prob < 0.10
-// Low       → Yellow  (#eab308)  prob 0.10–0.25
-// Moderate  → Orange  (#f97316)  prob 0.25–0.50
-// High      → Red     (#dc2626)  prob 0.50–0.75
-// Very High → Purple  (#7c3aed)  prob >= 0.75
 
 export default function MapContent() {
   const mapRef = useRef<L.Map | null>(null);
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const layerGroupsRef = useRef<Record<string, L.Layer>>({});
   const hazardLayerRef = useRef<L.LayerGroup | null>(null);
+  const barangayLayerRef = useRef<L.GeoJSON | null>(null);
 
   const state = useAppState();
   const dispatch = useAppDispatch();
@@ -44,33 +41,53 @@ export default function MapContent() {
       zoom: DEFAULT_MAP_VIEW.zoom,
       zoomControl: false,
       attributionControl: false,
+      maxZoom: MAX_ZOOM,
     });
 
-    L.tileLayer(
-      "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
-      {
-        maxZoom: 19,
-        attribution:
-          '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>',
-      }
-    ).addTo(map);
+    // Basemap tile layer
+    L.tileLayer(TILE_URL, {
+      maxZoom: MAX_ZOOM,
+      attribution: TILE_ATTRIBUTION,
+    }).addTo(map);
 
+
+    // Zoom control
     L.control.zoom({ position: "bottomright" }).addTo(map);
 
+    // Attribution control
     L.control
       .attribution({ position: "bottomleft", prefix: false })
       .addAttribution("Flood Hazard System — BU CS 2025")
       .addTo(map);
 
+    // ✅ Native Leaflet scale bar — replaces the static ScaleBar component
+    L.control.scale({
+      position: "bottomleft",
+      imperial: false,
+      maxWidth: 120,
+    }).addTo(map);
+
     map.fitBounds(LEGAZPI_BOUNDS, { padding: [20, 20] });
 
     mapRef.current = map;
 
-    loadBarangayBoundaries(map);
+    loadBarangayBoundaries(map, barangayLayerRef);
+
+    // ✅ Zoom-based barangay fill toggle
+    map.on("zoomend", () => {
+      if (!barangayLayerRef.current) return;
+      const z = map.getZoom();
+      barangayLayerRef.current.setStyle({
+        fillOpacity: z >= STREET_ZOOM_THRESHOLD ? 0 : 0,
+        opacity:     z >= STREET_ZOOM_THRESHOLD ? 0.9 : 0.6,
+        weight:      z >= STREET_ZOOM_THRESHOLD ? 2   : 1.5,
+      });
+    });
 
     return () => {
       map.remove();
       mapRef.current = null;
+      barangayLayerRef.current = null;
       if (mapContainerRef.current) {
         delete (mapContainerRef.current as any)._leaflet_id;
       }
@@ -121,7 +138,8 @@ export default function MapContent() {
         <HazardLegend />
       )}
 
-      <ScaleBar />
+      {/* ScaleBar is now handled by Leaflet's L.control.scale above */}
+      {/* Remove <ScaleBar /> — it's been replaced by the native control */}
 
       {state.selectedBarangay && state.prediction && (
         <BarangayPopup
@@ -134,23 +152,39 @@ export default function MapContent() {
   );
 }
 
-async function loadBarangayBoundaries(map: L.Map) {
+// =============================================================================
+// BARANGAY BOUNDARIES LOADER
+// Now accepts barangayLayerRef so zoom handler can reference the layer
+// =============================================================================
+
+async function loadBarangayBoundaries(
+  map: L.Map,
+  barangayLayerRef: React.MutableRefObject<L.GeoJSON | null>
+) {
   try {
+    console.log("[MapContent] Fetching barangays.geojson...");
     const response = await fetch("/spatial/barangays.geojson");
+    console.log("[MapContent] GeoJSON fetch status:", response.status, response.ok);
+
     if (!response.ok) {
-      console.warn("Barangay boundaries not found.");
+      console.warn("[MapContent] Barangay boundaries not found — check /public/spatial/barangays.geojson");
       return;
     }
+
     const geojson = await response.json();
+    console.log("[MapContent] GeoJSON loaded. Feature count:", geojson.features?.length);
 
-    try {
-      map.getContainer();
-    } catch {
+    if (!geojson.features?.length) {
+      console.warn("[MapContent] GeoJSON has no features.");
       return;
     }
-    if (!map.getPane("overlayPane")) return;
 
-    L.geoJSON(geojson, {
+    if (!map || map.getContainer() == null) {
+      console.warn("[MapContent] Map was unmounted before GeoJSON could be added.");
+      return;
+    }
+
+    const layer = L.geoJSON(geojson, {
       style: {
         color: "#0d4f7a",
         weight: 1.5,
@@ -160,8 +194,14 @@ async function loadBarangayBoundaries(map: L.Map) {
         dashArray: "4 2",
       },
       onEachFeature: (feature, layer) => {
-        if (feature.properties?.name) {
-          layer.bindTooltip(feature.properties.name, {
+        const label =
+          feature.properties?.name ??
+          feature.properties?.bgy_name ??
+          feature.properties?.NAME ??
+          feature.properties?.BGY_NAME;
+
+        if (label) {
+          layer.bindTooltip(label, {
             permanent: false,
             direction: "center",
             className: "barangay-tooltip",
@@ -169,10 +209,19 @@ async function loadBarangayBoundaries(map: L.Map) {
         }
       },
     }).addTo(map);
+
+    // ✅ Store reference so zoom handler can call setStyle on it
+    barangayLayerRef.current = layer;
+
+    console.log("[MapContent] Barangay boundaries added to map.");
   } catch (e) {
-    console.warn("Could not load barangay boundaries:", e);
+    console.error("[MapContent] Could not load barangay boundaries:", e);
   }
 }
+
+// =============================================================================
+// SPATIAL LAYER LOADER
+// =============================================================================
 
 async function loadSpatialLayer(
   map: L.Map,
@@ -202,13 +251,24 @@ async function loadSpatialLayer(
 
         if ((layerConfig as any).categorical) {
           const classCode = Math.round(val);
-          if (layerId === "lulc") return LULC_CLASSES[classCode]?.color ?? null;
+          if (layerId === "lulc")    return LULC_CLASSES[classCode]?.color    ?? null;
           if (layerId === "geology") return GEOLOGY_CLASSES[classCode]?.color ?? null;
           return null;
         }
 
         const [min, max] = layerConfig.valueRange;
-        const normalized = Math.max(0, Math.min(1, (val - min) / (max - min)));
+        let normalized: number;
+
+        if ((layerConfig as any).colorScale === "logarithmic") {
+          const logMin = Math.log10(Math.max(1, min));
+          const logMax = Math.log10(Math.max(1, max));
+          const logVal = Math.log10(Math.max(1, val));
+          normalized = (logVal - logMin) / (logMax - logMin);
+        } else {
+          normalized = (val - min) / (max - min);
+        }
+
+        normalized = Math.max(0, Math.min(1, normalized));
         return interpolateColorRamp(normalized, layerConfig.colorRamp);
       },
     });
@@ -220,21 +280,15 @@ async function loadSpatialLayer(
       [layerId]: layer,
     };
   } catch (e) {
-    console.warn(`Could not load spatial layer ${layerId}:`, e);
-    console.info(`Ensure ${layerConfig.filePath} exists (export from QGIS as GeoTIFF EPSG:4326)`);
+    console.warn(`[MapContent] Could not load spatial layer "${layerId}":`, e);
+    console.info(`[MapContent] Ensure ${layerConfig.filePath} exists (export from QGIS as GeoTIFF EPSG:4326)`);
   }
 }
 
-/**
- * Returns the fill color for a given flood probability using the
- * 5-tier hazard legend:
- *
- *  prob >= 0.75  → Very High → Purple  #7c3aed
- *  prob >= 0.50  → High      → Red     #dc2626
- *  prob >= 0.25  → Moderate  → Orange  #f97316
- *  prob >= 0.10  → Low       → Yellow  #eab308
- *  prob <  0.10  → Very Low  → Green   #22c55e
- */
+// =============================================================================
+// HAZARD COLOR HELPER
+// =============================================================================
+
 function floodProbToColor(prob: number): string {
   if (prob >= 0.75) return "#7c3aed"; // Very High — Purple
   if (prob >= 0.50) return "#dc2626"; // High      — Red
@@ -242,6 +296,10 @@ function floodProbToColor(prob: number): string {
   if (prob >= 0.10) return "#eab308"; // Low       — Yellow
   return "#22c55e";                   // Very Low  — Green
 }
+
+// =============================================================================
+// HAZARD OVERLAY RENDERER
+// =============================================================================
 
 async function renderHazardOverlay(
   map: L.Map,
@@ -253,16 +311,13 @@ async function renderHazardOverlay(
     if (!response.ok) return;
     const geojson = await response.json();
 
-    // Build lookup: lowercase barangay name → probability
     const probMap = new Map<string, number>();
 
     if (prediction.barangays && prediction.flood_probability) {
-      // Real FastAPI format
       (prediction.barangays as string[]).forEach((name: string, i: number) => {
         probMap.set(name.toLowerCase(), prediction.flood_probability[i]);
       });
     } else if (prediction.barangayHazards) {
-      // Mock format fallback
       prediction.barangayHazards.forEach((h: any) => {
         probMap.set(h.barangayName.toLowerCase(), h.floodProbability);
       });
@@ -270,38 +325,32 @@ async function renderHazardOverlay(
 
     const hazardLayer = L.geoJSON(geojson, {
       style: (feature) => {
-        // GeoJSON uses "bgy_name" property
-        const name = (feature?.properties?.bgy_name ?? "").toLowerCase();
+        const name = (
+          feature?.properties?.bgy_name ??
+          feature?.properties?.name ??
+          feature?.properties?.BGY_NAME ??
+          feature?.properties?.NAME ??
+          ""
+        ).toLowerCase();
+
         const prob = probMap.get(name) ?? null;
 
         if (prob === null) {
-          return {
-            fillColor: "#cccccc",
-            fillOpacity: 0.15,
-            weight: 1,
-            color: "#999",
-            opacity: 0.4,
-          };
+          return { fillColor: "#cccccc", fillOpacity: 0.15, weight: 1, color: "#999", opacity: 0.4 };
         }
 
         const color = floodProbToColor(prob);
-
-        return {
-          fillColor: color,
-          fillOpacity: 0.5,
-          weight: 2,
-          color: color,
-          opacity: 0.8,
-        };
+        return { fillColor: color, fillOpacity: 0.5, weight: 2, color, opacity: 0.8 };
       },
       onEachFeature: (feature, layer) => {
-        const name = feature?.properties?.bgy_name ?? "Unknown";
+        const name =
+          feature?.properties?.bgy_name ??
+          feature?.properties?.name ??
+          "Unknown";
         const prob = probMap.get(name.toLowerCase());
         layer.bindTooltip(
           `<strong>${name}</strong>${
-            prob !== undefined
-              ? `<br/>P(flood) = ${(prob * 100).toFixed(1)}%`
-              : ""
+            prob !== undefined ? `<br/>P(flood) = ${(prob * 100).toFixed(1)}%` : ""
           }`,
           { sticky: true }
         );
@@ -311,9 +360,13 @@ async function renderHazardOverlay(
     hazardLayer.addTo(map);
     hazardLayerRef.current = hazardLayer as unknown as L.LayerGroup;
   } catch (e) {
-    console.warn("Could not render hazard overlay:", e);
+    console.warn("[MapContent] Could not render hazard overlay:", e);
   }
 }
+
+// =============================================================================
+// COLOR INTERPOLATION
+// =============================================================================
 
 function interpolateColorRamp(t: number, ramp: string[]): string {
   const idx = t * (ramp.length - 1);
@@ -330,12 +383,12 @@ function interpolateColorRamp(t: number, ramp: string[]): string {
   const c1 = parse(ramp[lo]);
   const c2 = parse(ramp[hi]);
 
-  const r = Math.round(c1.r + (c2.r - c1.r) * frac);
-  const g = Math.round(c1.g + (c2.g - c1.g) * frac);
-  const b = Math.round(c1.b + (c2.b - c1.b) * frac);
-
-  return `rgb(${r}, ${g}, ${b})`;
+  return `rgb(${Math.round(c1.r + (c2.r - c1.r) * frac)}, ${Math.round(c1.g + (c2.g - c1.g) * frac)}, ${Math.round(c1.b + (c2.b - c1.b) * frac)})`;
 }
+
+// =============================================================================
+// BARANGAY POPUP
+// =============================================================================
 
 function BarangayPopup({
   barangayId,

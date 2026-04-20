@@ -2,10 +2,6 @@
 
 import dynamic from "next/dynamic";
 
-/**
- * MapView wrapper — dynamically imports the Leaflet map to avoid SSR issues.
- * Leaflet requires `window` which doesn't exist during server-side rendering.
- */
 const MapContent = dynamic(() => import("./MapContent"), {
   ssr: false,
   loading: () => (
