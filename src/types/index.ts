@@ -20,20 +20,18 @@ export type SpatialLayerId =
 
 /** Metadata for a single raster/vector spatial layer */
 export interface SpatialLayer {
-  id: SpatialLayerId;
+  id: string;
   label: string;
   description: string;
   unit: string;
   source: string;
-  /** Path to GeoTIFF or GeoJSON in public/spatial/ */
   filePath: string;
-  /** Min-max range for normalization (0-1) */
   valueRange: [number, number];
-  /** Color ramp for visualization */
   colorRamp: string[];
+  colorScale?: "linear" | "logarithmic"; 
+  categorical: boolean;
   visible: boolean;
   opacity: number;
-  categorical?: boolean; // For layers like LULC with discrete classes
 }
 
 /** Barangay boundary feature */
