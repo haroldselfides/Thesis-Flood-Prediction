@@ -10,10 +10,13 @@ import type {
 // LEGAZPI CITY GEOGRAPHIC CONSTANTS
 // =============================================================================
 // src/lib/constants.ts
-export const TILE_URL = "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png";
-//export const TILE_URL = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
-export const TILE_ATTRIBUTION =
-  '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+// export const TILE_URL = "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png";
+// //export const TILE_URL = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
+// export const TILE_ATTRIBUTION =
+//   '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+
+export const TILE_URL = "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}";
+export const TILE_ATTRIBUTION = "Tiles &copy; Esri &mdash; Source: Esri, HERE, DeLorme";
 
 export const LEGAZPI_CENTER: [number, number] = [13.1391, 123.7438];
 
