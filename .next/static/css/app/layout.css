@@ -550,9 +550,6 @@ video {
 .relative {
   position: relative;
 }
-.sticky {
-  position: sticky;
-}
 .inset-0 {
   inset: 0px;
 }
@@ -1197,9 +1194,6 @@ video {
 }
 .uppercase {
   text-transform: uppercase;
-}
-.lowercase {
-  text-transform: lowercase;
 }
 .leading-relaxed {
   line-height: 1.625;

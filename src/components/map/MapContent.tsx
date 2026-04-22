@@ -273,10 +273,10 @@ export default function MapContent() {
 
 async function loadBarangayBoundaries(map: maplibregl.Map): Promise<void> {
   try {
-    console.log("[MapContent] Fetching barangays.geojson...");
-    const response = await fetch("/spatial/barangays.geojson");
+    console.log("[MapContent] Fetching guicadale_map.geojson...");
+    const response = await fetch("/spatial/guicadale_map.geojson");
     if (!response.ok) {
-      console.warn("[MapContent] barangays.geojson not found — check /public/spatial/");
+      console.warn("[MapContent] guicadale_map.geojson not found — check /public/spatial/");
       return;
     }
 
@@ -520,7 +520,7 @@ async function loadSpatialLayer(
 
 async function renderHazardOverlay(map: maplibregl.Map, prediction: any) {
   try {
-    const response = await fetch("/spatial/barangays.geojson");
+    const response = await fetch("/spatial/guicadale_map.geojson");
     if (!response.ok) return;
     const geojson = await response.json();
 
