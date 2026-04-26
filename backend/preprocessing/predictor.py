@@ -1,6 +1,6 @@
 """
 backend/preprocessing/predictor.py
-Assemble the full 71-barangay feature matrix and run XGBoost inference.
+Assemble the full barangay feature matrix and run XGBoost inference.
 """
 
 import logging
@@ -11,23 +11,11 @@ from ecmwf.ecmwf import RainfallForecast, validate_rainfall_units
 
 logger = logging.getLogger(__name__)
 
-# Maps startup.py column names → model training column names
-STATIC_COLUMN_MAP = {
-    "log_elevation":           "elev_1",
-    "log_slope":               "slope_1",
-    "log_flow_accumulation":   "log_flowacc",
-    "geology_majority":        "geol_1",
-    "lulc_built_up":           "lulc_1",
-    "log_distance_from_river": "distriver_1",
-    "log_twi":                 "twi_1",
-    "tc_cluster":              "cluster_id",
-}
-
 # Final 11 features in exact order the model expects
 MODEL_EXPECTED_FEATURES = [
     "elev_1",
     "slope_1",
-    "log_flowacc",
+    "flowacc_1",
     "geol_1",
     "lulc_1",
     "distriver_1",
@@ -38,41 +26,33 @@ MODEL_EXPECTED_FEATURES = [
     "cluster_id",
 ]
 
+# Static columns to select from static_df (before adding rainfall)
+STATIC_FEATURES = ["elev_1", "slope_1", "flowacc_1", "geol_1", "lulc_1",
+                   "distriver_1", "twi_1", "tc_cluster"]
+
 
 def build_feature_matrix(
     static_df: pd.DataFrame,
     forecast: RainfallForecast,
 ) -> pd.DataFrame:
-    """
-    Remap startup.py column names to model training names, broadcast
-    rainfall values, and return a (71 x 11) DataFrame ready for inference.
-
-    Parameters
-    ----------
-    static_df : 71-row DataFrame from preprocessing/startup.py
-    forecast  : RainfallForecast — rain values already in mm
-    """
     validate_rainfall_units(forecast.rain_1hr, "rain_1hr")
     validate_rainfall_units(forecast.rain_3hr, "rain_3hr")
     validate_rainfall_units(forecast.rain_6hr, "rain_6hr")
 
-    # Select and rename static columns to match model training names
-    static_cols = list(STATIC_COLUMN_MAP.keys())
-    missing = [c for c in static_cols if c not in static_df.columns]
+    missing = [c for c in STATIC_FEATURES if c not in static_df.columns]
     if missing:
         raise ValueError(
             f"static_df is missing expected columns: {missing}\n"
             f"Available columns: {static_df.columns.tolist()}"
         )
 
-    X = static_df[static_cols].copy().rename(columns=STATIC_COLUMN_MAP)
+    X = static_df[STATIC_FEATURES].copy()
+    X = X.rename(columns={"tc_cluster": "cluster_id"})
 
-    # Add rainfall features (column names must match training exactly)
     X["rain_1h"] = forecast.rain_1hr
     X["rain_3h"] = forecast.rain_3hr
     X["rain_6h"] = forecast.rain_6hr
 
-    # Reorder to exact model feature order
     return X[MODEL_EXPECTED_FEATURES]
 
 
@@ -81,17 +61,10 @@ def run_prediction(
     static_df: pd.DataFrame,
     forecast: RainfallForecast,
 ) -> dict:
-    """
-    Run flood probability prediction for all 71 barangays simultaneously.
-    Called by GET /predict and GET /predict/window/{hours} in backend/main.py.
-
-    Returns a dict ready to be serialised as JSON.
-    """
     X = build_feature_matrix(static_df, forecast)
-    logger.info(f"Feature matrix shape: {X.shape}")  # should be (71, 11)
+    logger.info(f"Feature matrix shape: {X.shape}")
     logger.info(f"Feature columns: {X.columns.tolist()}")
 
-    # predict_proba[:, 1] = P(flood = 1)
     proba = model.predict_proba(X.values)[:, 1]
     proba_rounded = [round(float(p), 4) for p in proba]
     barangays = static_df["barangay"].tolist()

@@ -24,7 +24,7 @@ async def lifespan(app: FastAPI):
     logger.info("🚀 Loading model and static features...")
     app.state.model = load_model("model/xgboost_flood_model.json")
     app.state.static_df = load_static_features(
-        "preprocessing/data/legazpi_spatial_features_final_last.gpkg"
+        "preprocessing/data/guicadale_points.gpkg"
     )
     logger.info("✅ Startup complete — 71 barangays ready.")
     yield
