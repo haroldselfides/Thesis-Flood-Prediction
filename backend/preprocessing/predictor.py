@@ -11,11 +11,11 @@ from ecmwf.ecmwf import RainfallForecast, validate_rainfall_units
 
 logger = logging.getLogger(__name__)
 
-# Final 11 features in exact order the model expects
+# Exact 11 features the model was trained on, in order
 MODEL_EXPECTED_FEATURES = [
     "elev_1",
     "slope_1",
-    "flowacc_1",
+    "log_flowacc",
     "geol_1",
     "lulc_1",
     "distriver_1",
@@ -26,9 +26,10 @@ MODEL_EXPECTED_FEATURES = [
     "cluster_id",
 ]
 
-# Static columns to select from static_df (before adding rainfall)
-STATIC_FEATURES = ["elev_1", "slope_1", "flowacc_1", "geol_1", "lulc_1",
-                   "distriver_1", "twi_1", "tc_cluster"]
+STATIC_FEATURES = [
+    "elev_1", "slope_1", "flowacc_1", "geol_1",
+    "lulc_1", "distriver_1", "twi_1", "tc_cluster",
+]
 
 
 def build_feature_matrix(
@@ -42,12 +43,15 @@ def build_feature_matrix(
     missing = [c for c in STATIC_FEATURES if c not in static_df.columns]
     if missing:
         raise ValueError(
-            f"static_df is missing expected columns: {missing}\n"
-            f"Available columns: {static_df.columns.tolist()}"
+            f"static_df missing columns: {missing}\n"
+            f"Available: {static_df.columns.tolist()}"
         )
 
     X = static_df[STATIC_FEATURES].copy()
-    X = X.rename(columns={"tc_cluster": "cluster_id"})
+    X = X.rename(columns={
+        "flowacc_1":  "log_flowacc",
+        "tc_cluster": "cluster_id",
+    })
 
     X["rain_1h"] = forecast.rain_1hr
     X["rain_3h"] = forecast.rain_3hr
