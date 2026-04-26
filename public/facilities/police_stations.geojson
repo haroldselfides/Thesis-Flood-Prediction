@@ -1,0 +1,257 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7294796,
+          13.1514218
+        ]
+      },
+      "properties": {
+        "name": "PNP Aviation Security",
+        "address": "",
+        "barangay": "",
+        "type": "Police Station",
+        "amenity": "police",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7527726,
+          13.1514288
+        ]
+      },
+      "properties": {
+        "name": "Police Station",
+        "address": "",
+        "barangay": "",
+        "type": "Police Station",
+        "amenity": "police",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7263846,
+          13.1460226
+        ]
+      },
+      "properties": {
+        "name": "Camp General Simeon Ola",
+        "address": "Rizal Avenue, Daraga",
+        "barangay": "",
+        "type": "Police Station",
+        "amenity": "police",
+        "operator": "PNP Regional Office 5",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7517382,
+          13.1686435
+        ]
+      },
+      "properties": {
+        "name": "Police Community Precinct 5",
+        "address": "",
+        "barangay": "",
+        "type": "Police Station",
+        "amenity": "police",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7447488,
+          13.1459202
+        ]
+      },
+      "properties": {
+        "name": "Legazpi City Police",
+        "address": "",
+        "barangay": "",
+        "type": "Police Station",
+        "amenity": "police",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7128247,
+          13.1488746
+        ]
+      },
+      "properties": {
+        "name": "Daraga Police Station",
+        "address": "",
+        "barangay": "",
+        "type": "Police Station",
+        "amenity": "police",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7340672,
+          13.1380059
+        ]
+      },
+      "properties": {
+        "name": "Police Outpost",
+        "address": "",
+        "barangay": "",
+        "type": "Police Station",
+        "amenity": "police",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7251505,
+          13.1568206
+        ]
+      },
+      "properties": {
+        "name": "Police Assistance Center",
+        "address": "",
+        "barangay": "",
+        "type": "Police Station",
+        "amenity": "police",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6559071,
+          13.1815399
+        ]
+      },
+      "properties": {
+        "name": "Camalig Police Station",
+        "address": "",
+        "barangay": "",
+        "type": "Police Station",
+        "amenity": "police",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7567161,
+          13.1441816
+        ]
+      },
+      "properties": {
+        "name": "Police",
+        "address": "",
+        "barangay": "",
+        "type": "Police Station",
+        "amenity": "police",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5736574,
+          13.2236515
+        ]
+      },
+      "properties": {
+        "name": "1st Albay Provincial Mobile Force Company",
+        "address": "",
+        "barangay": "",
+        "type": "Police Station",
+        "amenity": "police",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6964958,
+          13.0951048
+        ]
+      },
+      "properties": {
+        "name": "2nd Albay Provincial Mobile Force Company",
+        "address": "",
+        "barangay": "",
+        "type": "Police Station",
+        "amenity": "police",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    }
+  ]
+}

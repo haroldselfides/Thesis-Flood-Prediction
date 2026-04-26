@@ -5,6 +5,7 @@ import type {
   AppState,
   PredictionWindow,
   SpatialLayerId,
+  FacilityLayerId,
   PredictionResponse,
 } from "@/types";
 import { LEGAZPI_CENTER } from "@/lib/constants";
@@ -13,6 +14,7 @@ import { LEGAZPI_CENTER } from "@/lib/constants";
 const initialState: AppState = {
   predictionWindow: "1h",
   visibleLayers: [],
+  visibleFacilities: [],
   mapView: { center: LEGAZPI_CENTER, zoom: 13 },
   sidebar: { isOpen: true, activeTab: "layers" },
   selectedBarangay: null,
@@ -26,6 +28,7 @@ type Action =
   | { type: "SET_PREDICTION_WINDOW"; payload: PredictionWindow }
   | { type: "TOGGLE_LAYER"; payload: SpatialLayerId }
   | { type: "SET_LAYER_VISIBILITY"; payload: { id: SpatialLayerId; visible: boolean } }
+  | { type: "TOGGLE_FACILITY"; payload: FacilityLayerId }
   | { type: "SET_SIDEBAR_TAB"; payload: AppState["sidebar"]["activeTab"] }
   | { type: "TOGGLE_SIDEBAR" }
   | { type: "SELECT_BARANGAY"; payload: string | null }
@@ -52,6 +55,13 @@ function appReducer(state: AppState, action: Action): AppState {
         ? [...state.visibleLayers.filter((l) => l !== id), id]
         : state.visibleLayers.filter((l) => l !== id);
       return { ...state, visibleLayers: layers };
+    }
+
+    case "TOGGLE_FACILITY": {
+      const facilities = state.visibleFacilities.includes(action.payload)
+        ? state.visibleFacilities.filter((f) => f !== action.payload)
+        : [...state.visibleFacilities, action.payload];
+      return { ...state, visibleFacilities: facilities };
     }
 
     case "SET_SIDEBAR_TAB":

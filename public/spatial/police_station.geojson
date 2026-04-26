@@ -1,0 +1,491 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-04-25T07:00:27Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/253231623",
+        "amenity": "police",
+        "building": "yes",
+        "name": "PNP Aviation Security",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7294796,
+          13.1514218
+        ]
+      },
+      "id": "way/253231623"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/258271618",
+        "amenity": "police",
+        "building": "yes",
+        "name": "Police Station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7527726,
+          13.1514288
+        ]
+      },
+      "id": "way/258271618"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/336139719",
+        "addr:town": "Pilar",
+        "addr:village": "Putiao",
+        "amenity": "police",
+        "building": "yes",
+        "name": "Putiao Police Station",
+        "source": "Schadow1 Expeditions;Pilar LGU",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7150288,
+          13.020137
+        ]
+      },
+      "id": "way/336139719"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/387469309",
+        "addr:city": "Daraga",
+        "addr:postcode": "4501",
+        "addr:street": "Rizal Avenue",
+        "amenity": "police",
+        "landuse": "commercial",
+        "name": "Camp General Simeon Ola",
+        "operator": "PNP Regional Office 5",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7263846,
+          13.1460226
+        ]
+      },
+      "id": "way/387469309"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/426532459",
+        "addr:city": "Tabaco",
+        "addr:postcode": "4511",
+        "addr:street": "Legazpi-Santo Domingo-Tabaco Road",
+        "amenity": "police",
+        "building": "yes",
+        "name": "Tabaco City Police Station",
+        "operator": "Philippine National Police",
+        "operator:short": "PNP",
+        "operator:wikidata": "Q963772",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7221917,
+          13.371082
+        ]
+      },
+      "id": "way/426532459"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/435595202",
+        "addr:city": "Tabaco City",
+        "addr:postcode": "4511",
+        "amenity": "police",
+        "building": "yes",
+        "operator": "Philippine National Police",
+        "operator:short": "PNP",
+        "operator:wikidata": "Q963772",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7301626,
+          13.357487
+        ]
+      },
+      "id": "way/435595202"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/538298291",
+        "amenity": "police",
+        "building": "yes",
+        "name": "Ligao Police Precinct",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5392159,
+          13.2409139
+        ]
+      },
+      "id": "way/538298291"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/560549092",
+        "amenity": "police",
+        "building": "yes",
+        "name": "Police Community Precinct 5",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7517382,
+          13.1686435
+        ]
+      },
+      "id": "way/560549092"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/602897993",
+        "amenity": "police",
+        "name": "Police Station",
+        "osm_id": "602897993",
+        "timestamp": "2013-02-15T06:32:14Z",
+        "type": "police"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7773627,
+          13.2372535
+        ]
+      },
+      "id": "node/602897993"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/717440795",
+        "amenity": "police",
+        "building": "yes",
+        "name": "Malilipot Municipal Police Station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.739083,
+          13.3222374
+        ]
+      },
+      "id": "way/717440795"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1025078094",
+        "amenity": "police",
+        "landuse": "military",
+        "name": "Camp Captain Salvador Jaucian Del Rosario, Sr.",
+        "old_name": "Albay Police Provincial Office",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5321577,
+          13.2358475
+        ]
+      },
+      "id": "way/1025078094"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1171486177",
+        "amenity": "police",
+        "name": "Malinao Police Station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.708186,
+          13.389753
+        ]
+      },
+      "id": "way/1171486177"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1215341870",
+        "amenity": "police",
+        "building": "yes",
+        "name": "Jovellar Municipal Police Station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5982798,
+          13.0728921
+        ]
+      },
+      "id": "way/1215341870"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1234549167",
+        "amenity": "police",
+        "landuse": "military",
+        "name": "Camp Police Max Jim Ramirez Tria",
+        "old_name": "504th Maneuver Company Regional Mobile Force Battalion 5",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7289339,
+          13.0038812
+        ]
+      },
+      "id": "way/1234549167"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1752574728",
+        "amenity": "police",
+        "name": "Malinao Police Station",
+        "osm_id": "1752574728",
+        "timestamp": "2012-05-14T13:57:41Z",
+        "type": "police"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7046278,
+          13.3972934
+        ]
+      },
+      "id": "node/1752574728"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1827443583",
+        "amenity": "police",
+        "name": "Legazpi City Police",
+        "osm_id": "1827443583",
+        "timestamp": "2012-07-16T11:55:09Z",
+        "type": "police"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7447488,
+          13.1459202
+        ]
+      },
+      "id": "node/1827443583"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3908828767",
+        "amenity": "police",
+        "name": "Daraga Police Station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7128247,
+          13.1488746
+        ]
+      },
+      "id": "node/3908828767"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3909351012",
+        "amenity": "police"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7230798,
+          13.1464062
+        ]
+      },
+      "id": "node/3909351012"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3912711889",
+        "amenity": "police",
+        "check_date": "2025-02-25",
+        "name": "Police Outpost"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7340672,
+          13.1380059
+        ]
+      },
+      "id": "node/3912711889"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3926246637",
+        "amenity": "police"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7168218,
+          13.1489986
+        ]
+      },
+      "id": "node/3926246637"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3926836859",
+        "amenity": "police",
+        "name": "Police Assistance Center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7251505,
+          13.1568206
+        ]
+      },
+      "id": "node/3926836859"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3930050231",
+        "amenity": "police",
+        "name": "Camalig Police Station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6559071,
+          13.1815399
+        ]
+      },
+      "id": "node/3930050231"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3953117618",
+        "amenity": "police",
+        "name": "Police"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7567161,
+          13.1441816
+        ]
+      },
+      "id": "node/3953117618"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4939934227",
+        "amenity": "police",
+        "name": "Manito Police Station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.8668267,
+          13.1245529
+        ]
+      },
+      "id": "node/4939934227"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5524743209",
+        "amenity": "police"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7431885,
+          13.1196519
+        ]
+      },
+      "id": "node/5524743209"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6880055386",
+        "amenity": "police",
+        "name": "1st Albay Provincial Mobile Force Company"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5736574,
+          13.2236515
+        ]
+      },
+      "id": "node/6880055386"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12243187909",
+        "amenity": "police",
+        "name": "2nd Albay Provincial Mobile Force Company"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6964958,
+          13.0951048
+        ]
+      },
+      "id": "node/12243187909"
+    }
+  ]
+}

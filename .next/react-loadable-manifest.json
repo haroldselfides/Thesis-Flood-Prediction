@@ -7,9 +7,6 @@
   },
   "components\\map\\MapView.tsx -> ./MapContent": {
     "id": "components\\map\\MapView.tsx -> ./MapContent",
-    "files": [
-      "static/css/_app-pages-browser_src_components_map_MapContent_tsx.css",
-      "static/chunks/_app-pages-browser_src_components_map_MapContent_tsx.js"
-    ]
+    "files": []
   }
 }

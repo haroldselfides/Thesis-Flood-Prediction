@@ -1,0 +1,2857 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-04-25T06:58:25Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/32481631",
+        "amenity": "hospital",
+        "name": "University of Santo Tomas - Legazpi Hospital",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7350367,
+          13.1463968
+        ]
+      },
+      "id": "way/32481631"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/163101154",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "name": "Garcia General Hospital",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6019855,
+          13.1887002
+        ]
+      },
+      "id": "way/163101154"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/166555909",
+        "amenity": "hospital",
+        "description": "Philhealth YAKAP Facility",
+        "emergency": "yes",
+        "government": "healthcare",
+        "healthcare": "hospital",
+        "name": "Josefina Belmonte Duran Albay Provincial Hospital",
+        "old_name": "Josefina Belmonte-Duran Memorial District Hospital",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5551946,
+          13.2398648
+        ]
+      },
+      "id": "way/166555909"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/247912342",
+        "amenity": "clinic",
+        "building": "yes",
+        "name": "Ibalong Medical Center",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7373685,
+          13.1382652
+        ]
+      },
+      "id": "way/247912342"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/247912814",
+        "amenity": "hospital",
+        "building": "yes",
+        "healthcare": "hospital",
+        "name": "Estevez Memorial Hospital",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7409247,
+          13.1381898
+        ]
+      },
+      "id": "way/247912814"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/249138505",
+        "amenity": "hospital",
+        "description": "Philhealth YAKAP Facility",
+        "healthcare": "hospital",
+        "name": "Ago General Hospital",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7308994,
+          13.1396129
+        ]
+      },
+      "id": "way/249138505"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/249138723",
+        "amenity": "clinic",
+        "description": "Philhealth YAKAP Facility",
+        "government": "healthcare",
+        "name": "Legazpi City Health Department Office",
+        "office": "government",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7350109,
+          13.1383309
+        ]
+      },
+      "id": "way/249138723"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/249853474",
+        "amenity": "clinic",
+        "building": "yes",
+        "name": "Albay Poly Clinic",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.733083,
+          13.139345
+        ]
+      },
+      "id": "way/249853474"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/250298206",
+        "amenity": "clinic",
+        "building": "yes",
+        "name": "Clinic",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7313823,
+          13.1402685
+        ]
+      },
+      "id": "way/250298206"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251116285",
+        "addr:street": "Rizal Avenue",
+        "amenity": "hospital",
+        "name": "Sta Teresita Hospital",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7428668,
+          13.1386482
+        ]
+      },
+      "id": "way/251116285"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/252076745",
+        "amenity": "clinic",
+        "building": "yes",
+        "name": "Ciocson Medical Clinic",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7108915,
+          13.1550269
+        ]
+      },
+      "id": "way/252076745"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/252408956",
+        "amenity": "clinic",
+        "building": "yes",
+        "name": "Daraga Municipal Health Office",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7124338,
+          13.148437
+        ]
+      },
+      "id": "way/252408956"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/252411691",
+        "amenity": "clinic",
+        "building": "yes",
+        "name": "Central Link",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.720403,
+          13.1478595
+        ]
+      },
+      "id": "way/252411691"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/258343998",
+        "addr:city": "Guinobatan",
+        "amenity": "clinic",
+        "building": "yes",
+        "healthcare": "clinic",
+        "healthcare:speciality": "general",
+        "name": "BUCAF Clinic",
+        "opening_hours": "Mo-Fr 08:00-17:00",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5960378,
+          13.1928767
+        ]
+      },
+      "id": "way/258343998"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/274474191",
+        "amenity": "hospital",
+        "building": "hospital",
+        "description": "Philhealth YAKAP Facility",
+        "name": "Albay Doctors Hospital, Inc.",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7533086,
+          13.1498379
+        ]
+      },
+      "id": "way/274474191"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/330503423",
+        "amenity": "hospital",
+        "name": "Abandoned Andres-Maria Rios Memorial",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7359122,
+          13.3300245
+        ]
+      },
+      "id": "way/330503423"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/333482077",
+        "addr:city": "Malilipot, Albay",
+        "addr:postcode": "4510",
+        "addr:street": "Bordonada Street",
+        "amenity": "clinic",
+        "building": "yes",
+        "description": "Philhealth YAKAP Facility",
+        "name": "Rural Health Unit Malilipot",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7371388,
+          13.3196726
+        ]
+      },
+      "id": "way/333482077"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/344186713",
+        "addr:city": "Tabaco City",
+        "addr:postcode": "4511",
+        "addr:street": "Reuvivar Street",
+        "amenity": "hospital",
+        "building": "hospital",
+        "building:levels": "4",
+        "description": "Philhealth YAKAP Facility",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "name": "Doctor Amando D. Cope Memorial Hospital",
+        "previously": "node:3509431749",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7296216,
+          13.3610074
+        ]
+      },
+      "id": "way/344186713"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/387469528",
+        "addr:city": "Daraga",
+        "addr:neighbourhood": "Sagpon",
+        "addr:street": "Rizal Avenue",
+        "amenity": "hospital",
+        "contact:facebook": "brhmcofficial",
+        "email": "brhmc.cares@gmail.com",
+        "emergency": "no",
+        "government": "healthcare",
+        "healthcare": "hospital",
+        "name": "Bicol Regional Hospital and Medical Center",
+        "old_name": "Bicol Regional Training and Teaching Hospital",
+        "operator": "Department of Health",
+        "operator:en": "Department of Health",
+        "operator:short": "DOH",
+        "operator:tl": "Kagawaran ng Kalusugan",
+        "operator:type": "government",
+        "operator:wikidata": "Q3545669",
+        "phone": "+6352 4831088;+6352 4830806;+6352 4830807 loc. 211",
+        "short_name": "BRHMC",
+        "website": "https://brhmc.doh.gov.ph/",
+        "wikidata": "Q56479164",
+        "wikimedia_commons": "Category:Bicol Regional Hospital and Medical Center",
+        "wikipedia": "en:Bicol Regional Hospital and Medical Center",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7244055,
+          13.146863
+        ]
+      },
+      "id": "way/387469528"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/389135639",
+        "amenity": "hospital",
+        "description": "Philhealth YAKAP Facility",
+        "healthcare": "hospital",
+        "name": "Tanchuling General Hospital, Inc.",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.751883,
+          13.1437872
+        ]
+      },
+      "id": "way/389135639"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/389181847",
+        "amenity": "clinic",
+        "building": "yes",
+        "name": "Salvosa Clinic",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7527278,
+          13.149964
+        ]
+      },
+      "id": "way/389181847"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/432970526",
+        "addr:city": "Tabaco City",
+        "addr:postcode": "4511",
+        "amenity": "clinic",
+        "building": "yes",
+        "description": "Philhealth YAKAP Facility",
+        "name": "Tabaco City Health Unit",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7308058,
+          13.3598214
+        ]
+      },
+      "id": "way/432970526"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/444359724",
+        "addr:city": "Tabaco",
+        "addr:postcode": "4511",
+        "amenity": "hospital",
+        "building": "yes",
+        "description": "Philhealth YAKAP Facility",
+        "name": "Cabredo Hospital",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7290585,
+          13.3562686
+        ]
+      },
+      "id": "way/444359724"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/572171764",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Saint Anthony Infirmary",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6869799,
+          13.3524339
+        ]
+      },
+      "id": "way/572171764"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/925016984",
+        "amenity": "clinic",
+        "building": "yes",
+        "healthcare": "clinic",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7332493,
+          13.3446736
+        ]
+      },
+      "id": "way/925016984"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1005777914",
+        "amenity": "hospital",
+        "description": "Philhealth YAKAP Facility",
+        "government": "healthcare",
+        "healthcare": "hospital",
+        "name": "Legazpi City Hospital",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.744704,
+          13.1454176
+        ]
+      },
+      "id": "way/1005777914"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1006007676",
+        "addr:place": "Cabasan",
+        "amenity": "hospital",
+        "description": "Philhealth YAKAP Facility",
+        "healthcare": "hospital",
+        "name": "Cagraray District Hospital",
+        "note": "2021-11. The cross on the roof of the building seems to indicate that this feature is a hospital, or a similar healthcare facility",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.8792926,
+          13.3260316
+        ]
+      },
+      "id": "way/1006007676"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1026040569",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Don Alfonso Bichara Memorial Hospital",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.69593,
+          13.0703881
+        ]
+      },
+      "id": "way/1026040569"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1073649203",
+        "addr:street": "BUCIT Road",
+        "amenity": "clinic",
+        "building": "yes",
+        "healthcare": "clinic",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7293645,
+          13.1482215
+        ]
+      },
+      "id": "way/1073649203"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1080465456",
+        "amenity": "hospital",
+        "description": "Philhealth YAKAP Facility",
+        "name": "Zone Medical and Intervention Hospital, Inc.",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5309216,
+          13.2391667
+        ]
+      },
+      "id": "way/1080465456"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1135915751",
+        "amenity": "clinic",
+        "building": "yes",
+        "healthcare:speciality": "dialysis",
+        "name": "Dialysis Center",
+        "operator": "Dr. Lorenzo P. Ziga Memorial District Hospital",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7210036,
+          13.3580075
+        ]
+      },
+      "id": "way/1135915751"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1135915752",
+        "addr:street": "Karangahan Boulevard",
+        "amenity": "hospital",
+        "beds": "50",
+        "contact:phone": "+63 524875576",
+        "description": "Philhealth YAKAP Facility",
+        "emergency": "yes",
+        "government": "healthcare",
+        "healthcare": "hospital",
+        "name": "Dr. Lorenzo P. Ziga Memorial District Hospital",
+        "old_name": "Ziga Memorial District Hospital",
+        "ref": "DOH000000000002141",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7216393,
+          13.3578043
+        ]
+      },
+      "id": "way/1135915752"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1135924151",
+        "amenity": "hospital",
+        "name": "Allied Care Experts Medical Center - Legazpi",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7336795,
+          13.1586359
+        ]
+      },
+      "id": "way/1135924151"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1185667371",
+        "amenity": "clinic",
+        "building": "yes",
+        "healthcare": "clinic",
+        "name": "Barangay Health Center",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7075722,
+          13.3536048
+        ]
+      },
+      "id": "way/1185667371"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1338331146",
+        "amenity": "hospital",
+        "contact:facebook": "https://www.facebook.com/p/Manito-Municipal-Hospital-100063812994778/",
+        "healthcare": "hospital",
+        "mobile": "0999 527 6890",
+        "name": "Manito Municipal Hospital",
+        "note": "10 beds",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.871299,
+          13.1211388
+        ]
+      },
+      "id": "way/1338331146"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1426525550",
+        "addr:street": "Rizal Street",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Retuerma General Hospital",
+        "ref": "DOH000000000005962",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6034612,
+          13.1894086
+        ]
+      },
+      "id": "way/1426525550"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1578925072",
+        "addr:city": "Legazpi",
+        "addr:floor": "G/F",
+        "addr:housename": "GTS Building",
+        "addr:street": "Rizal Avenue",
+        "amenity": "pharmacy",
+        "branch": "Legazpi City Old Albay",
+        "brand": "Mercury Drug",
+        "brand:wikidata": "Q6818610",
+        "dispensing": "yes",
+        "drive_through": "no",
+        "healthcare": "pharmacy",
+        "level": "0",
+        "name": "Mercury Drug",
+        "opening_hours": "06:00-23:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7365619,
+          13.1383714
+        ]
+      },
+      "id": "node/1578925072"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1751434639",
+        "amenity": "pharmacy",
+        "brand": "Mercury Drug",
+        "brand:wikidata": "Q6818610",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Mercury Drug"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7301697,
+          13.3563952
+        ]
+      },
+      "id": "node/1751434639"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2470125112",
+        "addr:street": "General A. Luna Street",
+        "amenity": "pharmacy",
+        "brand": "Southstar Drug",
+        "brand:wikidata": "Q7568544",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Southstar Drug"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7306629,
+          13.3577714
+        ]
+      },
+      "id": "node/2470125112"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2533226750",
+        "addr:street": "Ziga Avenue",
+        "amenity": "pharmacy",
+        "brand": "Watsons",
+        "brand:wikidata": "Q7974785",
+        "healthcare": "pharmacy",
+        "name": "Watsons"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7298682,
+          13.3576735
+        ]
+      },
+      "id": "node/2533226750"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3442550821",
+        "addr:street": "Ziga Avenue",
+        "amenity": "pharmacy",
+        "brand": "Southstar Drug",
+        "brand:wikidata": "Q7568544",
+        "dispensing": "no",
+        "healthcare": "pharmacy",
+        "name": "Southstar Drug"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7298187,
+          13.3588526
+        ]
+      },
+      "id": "node/3442550821"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3907445030",
+        "addr:city": "Legazpi",
+        "addr:postcode": "4500",
+        "addr:street": "Rizal Street",
+        "amenity": "pharmacy",
+        "brand": "Mercury Drug",
+        "brand:facebook": "https://www.facebook.com/mercurydrugph",
+        "brand:website": "https://www.mercurydrug.com/",
+        "brand:wikidata": "Q6818610",
+        "brand:wikipedia": "en:Mercury Drug",
+        "healthcare": "pharmacy",
+        "name": "Mercury Drug",
+        "payment:cash": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7525459,
+          13.1465512
+        ]
+      },
+      "id": "node/3907445030"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3907446793",
+        "addr:city": "Legazpi",
+        "addr:postcode": "4500",
+        "addr:street": "Rizal Street",
+        "air_conditioning": "yes",
+        "amenity": "pharmacy",
+        "brand": "South Star Drug",
+        "brand:wikidata": "Q7568544",
+        "brand:wikipedia": "en:South Star Drug",
+        "healthcare": "pharmacy",
+        "name": "South Star Drug",
+        "payment:cash": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7526835,
+          13.1469275
+        ]
+      },
+      "id": "node/3907446793"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3908829652",
+        "addr:quarter": "Bañag",
+        "addr:street": "Maharlika Highway",
+        "amenity": "clinic",
+        "name": "Bethany Clinic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.710082,
+          13.1555525
+        ]
+      },
+      "id": "node/3908829652"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3909316830",
+        "amenity": "clinic",
+        "name": "Nuat Thai"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7480168,
+          13.1411073
+        ]
+      },
+      "id": "node/3909316830"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3909332443",
+        "amenity": "doctors",
+        "healthcare": "doctor",
+        "healthcare:speciality": "ophthalmology",
+        "name": "Legazpi Eye Center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7495073,
+          13.1458811
+        ]
+      },
+      "id": "node/3909332443"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3909357172",
+        "amenity": "doctors",
+        "healthcare": "doctor",
+        "name": "Central Link",
+        "office": "physician"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7204009,
+          13.1479241
+        ]
+      },
+      "id": "node/3909357172"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3909365869",
+        "addr:city": "Legazpi",
+        "addr:floor": "G/F",
+        "addr:housename": "Shoppers' Garden",
+        "addr:street": "Rizal Avenue",
+        "addr:street:corner": "R. Serrano Street",
+        "amenity": "pharmacy",
+        "brand": "South Star Drug",
+        "brand:wikidata": "Q7568544",
+        "brand:wikipedia": "en:South Star Drug",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "level": "0",
+        "name": "South Star Drug"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7331085,
+          13.1389219
+        ]
+      },
+      "id": "node/3909365869"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3926278329",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Pharmacia Cassandra"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7229061,
+          13.1465376
+        ]
+      },
+      "id": "node/3926278329"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3926899755",
+        "amenity": "clinic",
+        "name": "City House of Maternity"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7503568,
+          13.1462358
+        ]
+      },
+      "id": "node/3926899755"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3926899884",
+        "amenity": "clinic",
+        "name": "F. Rañola"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.749491,
+          13.1461352
+        ]
+      },
+      "id": "node/3926899884"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3940935621",
+        "alt_name": "The Generics Pharmacy",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "TGP",
+        "name:abbr": "TGP"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7140741,
+          13.1485658
+        ]
+      },
+      "id": "node/3940935621"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3940945103",
+        "amenity": "doctors",
+        "healthcare": "doctor",
+        "name": "Percy Avelino EENT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7204055,
+          13.1480648
+        ]
+      },
+      "id": "node/3940945103"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3940954958",
+        "amenity": "clinic",
+        "name": "Derma Medics"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7301299,
+          13.1406705
+        ]
+      },
+      "id": "node/3940954958"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3940956395",
+        "amenity": "clinic",
+        "name": "Matza-Recierdo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7306087,
+          13.1402524
+        ]
+      },
+      "id": "node/3940956395"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3940959120",
+        "amenity": "clinic",
+        "name": "Daddy's Little Angels"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7300388,
+          13.1407527
+        ]
+      },
+      "id": "node/3940959120"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3940961778",
+        "addr:city": "Legazpi",
+        "addr:floor": "G/F",
+        "addr:housename": "Shoppers' Garden",
+        "addr:street": "Rizal Avenue",
+        "addr:street:corner": "R. Serrano Street",
+        "amenity": "pharmacy",
+        "brand": "The Generics Pharmacy",
+        "brand:wikidata": "Q61948677",
+        "healthcare": "pharmacy",
+        "level": "0",
+        "name": "TGP",
+        "official_name": "The Generics Pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7330137,
+          13.1389234
+        ]
+      },
+      "id": "node/3940961778"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3940961980",
+        "addr:city": "Legazpi",
+        "addr:floor": "G/F",
+        "addr:housename": "Shoppers' Garden",
+        "addr:street": "Rizal Avenue",
+        "addr:street:corner": "R. Serrano Street",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "level": "0",
+        "name": "Ultra Drug"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7329794,
+          13.1389245
+        ]
+      },
+      "id": "node/3940961980"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3940966068",
+        "amenity": "clinic",
+        "name": "Albay Medical Specialists Clinic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7372168,
+          13.1384687
+        ]
+      },
+      "id": "node/3940966068"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3940984092",
+        "healthcare": "physiotherapist",
+        "name": "Legazpi Physical Therapy Center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7478735,
+          13.1408196
+        ]
+      },
+      "id": "node/3940984092"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3940991326",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "healthcare:speciality": "dermatology",
+        "name": "Skin Care Plus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7476622,
+          13.1407408
+        ]
+      },
+      "id": "node/3940991326"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3940996900",
+        "amenity": "clinic",
+        "name": "Diabetes Arthritis Wellness Center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.752195,
+          13.1431938
+        ]
+      },
+      "id": "node/3940996900"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3942713847",
+        "amenity": "clinic",
+        "name": "River of Life Medical Cllinic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7510577,
+          13.1563025
+        ]
+      },
+      "id": "node/3942713847"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3942716407",
+        "amenity": "clinic",
+        "name": "Dermedica"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.752773,
+          13.1507018
+        ]
+      },
+      "id": "node/3942716407"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3942720199",
+        "amenity": "clinic",
+        "name": "Little Clinic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7529993,
+          13.1500131
+        ]
+      },
+      "id": "node/3942720199"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3942723523",
+        "amenity": "clinic",
+        "name": "The Medical Station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7530996,
+          13.1495433
+        ]
+      },
+      "id": "node/3942723523"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3944974426",
+        "amenity": "clinic",
+        "name": "OB-Gyne Clinic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7293349,
+          13.1415644
+        ]
+      },
+      "id": "node/3944974426"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3944976516",
+        "addr:city": "Legazpi",
+        "addr:floor": "G/F",
+        "addr:housename": "Shoppers' Garden",
+        "addr:street": "Rizal Avenue",
+        "addr:street:corner": "R. Serrano Street",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "level": "0",
+        "name": "Zure Rx Drug"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7331095,
+          13.1390109
+        ]
+      },
+      "id": "node/3944976516"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3949933701",
+        "amenity": "clinic",
+        "healthcare": "clinic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.753713,
+          13.1455503
+        ]
+      },
+      "id": "node/3949933701"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3992051810",
+        "amenity": "clinic",
+        "name": "Culliat Health Center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7033786,
+          13.1589261
+        ]
+      },
+      "id": "node/3992051810"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4229166317",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "JRI Pharmaceuticals"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7469997,
+          13.1405804
+        ]
+      },
+      "id": "node/4229166317"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4243939525",
+        "amenity": "hospital",
+        "description": "Philhealth YAKAP Facility",
+        "healthcare": "hospital",
+        "name": "Jaime B. Berces Memorial Hospital",
+        "name:en": "Jaime B. Berces Memorial Hospital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7256912,
+          13.3603708
+        ]
+      },
+      "id": "node/4243939525"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4253823106",
+        "addr:street": "General A. Luna Street",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Earl Pharma"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.730772,
+          13.3581033
+        ]
+      },
+      "id": "node/4253823106"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4258075297",
+        "addr:city": "Tabaco City",
+        "addr:housenumber": "5",
+        "addr:postcode": "4511",
+        "addr:province": "Albay",
+        "addr:street": "Tomas Cabiles Street",
+        "amenity": "hospital",
+        "contact:fax": "+63 52 487 5443",
+        "contact:phone": "+63 52 487 4322",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "name": "Tabaco College Hospital",
+        "name:en": "Tabaco College Hospital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7262752,
+          13.3565725
+        ]
+      },
+      "id": "node/4258075297"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4376941011",
+        "addr:street": "Herrera Street",
+        "amenity": "pharmacy",
+        "brand": "Generika",
+        "brand:wikidata": "Q62564876",
+        "healthcare": "pharmacy",
+        "name": "Generika",
+        "shop": "chemist"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7302427,
+          13.3583952
+        ]
+      },
+      "id": "node/4376941011"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4418465275",
+        "amenity": "pharmacy",
+        "brand": "Southstar Drug",
+        "brand:wikidata": "Q7568544",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Southstar Drug"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7299701,
+          13.3572566
+        ]
+      },
+      "id": "node/4418465275"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4423246323",
+        "amenity": "dentist",
+        "healthcare": "dentist",
+        "name": "Dental Clinic - Cultivo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7304575,
+          13.355546
+        ]
+      },
+      "id": "node/4423246323"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4550348664",
+        "addr:street": "General A. Luna Street",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Unisia Drugstore"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7306892,
+          13.3584103
+        ]
+      },
+      "id": "node/4550348664"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4550348665",
+        "alt_name": "The Generics Pharmacy",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "TGP",
+        "name:abbr": "TGP"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7306574,
+          13.3587576
+        ]
+      },
+      "id": "node/4550348665"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4550348671",
+        "addr:street": "A. A. Berces Street",
+        "amenity": "clinic",
+        "check_date": "2025-09-04",
+        "description": "Philhealth YAKAP Facility",
+        "healthcare": "laboratory",
+        "name": "HealthQuarters Medical and Diagnostic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7273723,
+          13.3564895
+        ]
+      },
+      "id": "node/4550348671"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4774117837",
+        "addr:city": "Legazpi",
+        "addr:postcode": "4501",
+        "addr:street": "Captain Fermin Aquende Drive",
+        "amenity": "dentist",
+        "healthcare": "dentist",
+        "healthcare:speciality": "dentistry",
+        "name": "Dr Lyn Georgia Dental Clinic",
+        "name:en": "Dr Lyn Georgia Dental Clinic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7347268,
+          13.1432048
+        ]
+      },
+      "id": "node/4774117837"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4852866321",
+        "amenity": "hospital",
+        "description": "Philhealth YAKAP Facility",
+        "healthcare": "hospital",
+        "name": "Daraga Doctors' Hospital, Inc.",
+        "old_name": "Albay Doctor's Hospital - Daraga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7107781,
+          13.154137
+        ]
+      },
+      "id": "node/4852866321"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4857674121",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Saidel Drugstore"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7206469,
+          13.3581475
+        ]
+      },
+      "id": "node/4857674121"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5080458052",
+        "amenity": "hospital",
+        "check_date": "2026-04-23",
+        "healthcare": "hospital",
+        "name": "Tabaco Doctor's Infirmary Inc. (formerly Rico Hospital)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7314339,
+          13.3619524
+        ]
+      },
+      "id": "node/5080458052"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5204944390",
+        "amenity": "clinic",
+        "name": "Bonga Health Center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.758251,
+          13.2811149
+        ]
+      },
+      "id": "node/5204944390"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5334707323",
+        "amenity": "clinic",
+        "name": "Servants of Jesus",
+        "name:en": "Servants of Jesus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7296579,
+          13.144046
+        ]
+      },
+      "id": "node/5334707323"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5853069185",
+        "amenity": "clinic",
+        "name": "Statcare Diagnostics"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7344066,
+          13.1498353
+        ]
+      },
+      "id": "node/5853069185"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5905734112",
+        "description": "Manghihilot, mangtatawas, albularyo",
+        "healthcare": "alternative",
+        "name": "Tiya Mimay Parahilot"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.611152,
+          13.1927186
+        ]
+      },
+      "id": "node/5905734112"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7128972285",
+        "amenity": "clinic",
+        "name": "Lying-In K-Linik"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7307852,
+          13.3600426
+        ]
+      },
+      "id": "node/7128972285"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7128985685",
+        "amenity": "doctors",
+        "contact:email": "mho.daraga@gmail.com",
+        "contact:phone": "+6352 824 7959;+6352 483 5325",
+        "healthcare": "clinic",
+        "indoor": "yes",
+        "infection:hiv": "yes",
+        "name": "Daraga Rural Health Unit",
+        "operator": "Daraga Municipal LGU",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7128896,
+          13.1491628
+        ]
+      },
+      "id": "node/7128985685"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8041626986",
+        "addr:full": "Comun, Malinao, 4512 Albay",
+        "contact:email": "trc.malinao@gmail.com",
+        "contact:phone": "(052) 736 0688; 8244439; 09324725270",
+        "contact:website": "http://malinaotrc.com/",
+        "fee": "no",
+        "healthcare": "psychotherapist",
+        "indoor": "yes",
+        "name": "Malinao Treatment and Rehabilitation Center",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6638488,
+          13.345645
+        ]
+      },
+      "id": "node/8041626986"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8041651885",
+        "addr:full": "Rizal Avenue cor. Bagtang Road, Sagpon, Daraga, Albay",
+        "fee": "no",
+        "healthcare": "psychotherapist",
+        "indoor": "yes",
+        "initial_fee": "0",
+        "name": "Bicol Regional Training and Teaching Hospital - Psychiatry Unit",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7248918,
+          13.1467912
+        ]
+      },
+      "id": "node/8041651885"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8041658685",
+        "addr:full": "Rizal Avenue, Ilawod, Legazpi City, Albay",
+        "fee": "yes",
+        "healthcare": "psychotherapist",
+        "indoor": "yes",
+        "name": "Ibalong Medical Center (Bicol Medical Plaza)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.737403,
+          13.1383154
+        ]
+      },
+      "id": "node/8041658685"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8041661086",
+        "addr:full": "Gov. Locsin St., Baño, Legazpi City, Albay",
+        "fee": "yes",
+        "healthcare": "psychotherapist",
+        "indoor": "yes",
+        "name": "Albay Polyclinic",
+        "operator:type": "private"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7338866,
+          13.1393785
+        ]
+      },
+      "id": "node/8041661086"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8041661486",
+        "addr:full": "F. Aquende Drive cor. Benny Imperial St., Brgy. 16 Kawit - East Washington Drive, Albay District, Legazpi City, Albay",
+        "contact:phone": "(052) 225 1370",
+        "fee": "yes",
+        "healthcare": "psychotherapist",
+        "indoor": "yes",
+        "name": "University of Santo Tomas - Legazpi Hospital",
+        "operator:type": "private"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7349139,
+          13.1464621
+        ]
+      },
+      "id": "node/8041661486"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8041663085",
+        "addr:full": "110-1Rizal St.,Sagpon, Daraga, Albay 4501",
+        "contact:email": "crescheschool@yahoo.com.ph",
+        "contact:phone": "(052)4830330; 0998-9922969",
+        "fee": "yes",
+        "healthcare": "psychotherapist",
+        "indoor": "yes",
+        "name": "Cresche School Psychological Clinic",
+        "operator:type": "private"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7196924,
+          13.1479143
+        ]
+      },
+      "id": "node/8041663085"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8041668685",
+        "addr:full": "Rosal St., Imperial Court Subdivision Phase II, Rizal, Legazpi City, Albay",
+        "contact:phone": "(052) 480 6302",
+        "fee": "yes",
+        "healthcare": "psychotherapist",
+        "indoor": "yes",
+        "name": "Tanchuling General Hospital, Inc.",
+        "operator:type": "private"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.751942,
+          13.1438582
+        ]
+      },
+      "id": "node/8041668685"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8041766585",
+        "addr:full": "Hi-Tone Bldg., F. Imperial St., Bitano, Legazpi City, Albay",
+        "contact:email": "cywtac_legazpi@yahoo.com.ph",
+        "contact:phone": "(052) 201 9889",
+        "contact:website": "https://cywtacph.org/",
+        "fee": "yes",
+        "healthcare": "psychotherapist",
+        "indoor": "yes",
+        "name": "Children & Youth Wellness, Technical & Advocacy Center (CYWTAC), Inc.",
+        "operator:type": "private"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.744083,
+          13.1461787
+        ]
+      },
+      "id": "node/8041766585"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8041789385",
+        "addr:full": "3rd Floor Encarnacion Bldg., Rizal Avenue, Brgy. 17 Ilawod, Legazpi City, Albay",
+        "contact:phone": "09984656052",
+        "fee": "yes",
+        "healthcare": "psychotherapist",
+        "indoor": "yes",
+        "name": "LMC Neuro-psychiatric Testing Center",
+        "operator:type": "private"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7390968,
+          13.1387294
+        ]
+      },
+      "id": "node/8041789385"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8041794885",
+        "addr:full": "3rd Floor, SM City Legazpi, Bitano, Legazpi City, Albay",
+        "contact:email": "ustlegazpiclinic@gmail.com",
+        "contact:phone": "(052) 742 0367",
+        "fee": "yes",
+        "healthcare": "psychotherapist",
+        "indoor": "yes",
+        "name": "UST Clinic",
+        "operator:type": "private"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.744539,
+          13.143986
+        ]
+      },
+      "id": "node/8041794885"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8041852285",
+        "addr:full": "Don Juan Estevez St., Ilawod East, Legazpi City, Albay",
+        "contact:phone": "(052) 245 5031",
+        "contact:website": "http://estevezhospital.com",
+        "fee": "yes",
+        "healthcare": "psychotherapist",
+        "indoor": "yes",
+        "name": "Estevez Memorial Hospital, Inc.",
+        "operator:type": "private"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7409395,
+          13.1381482
+        ]
+      },
+      "id": "node/8041852285"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9403775015",
+        "amenity": "hospital",
+        "contact:facebook": "https://www.facebook.com/pages/Children_of_Abraham_Puericulture_Center/724840844222312/",
+        "healthcare": "hospital",
+        "mapillary": "214439163457896",
+        "name": "Children of Abraham Puericulture Center",
+        "opening_hours": "24/7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7278542,
+          13.1436559
+        ]
+      },
+      "id": "node/9403775015"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9731912596",
+        "addr:town": "Pilar",
+        "amenity": "health_post",
+        "name": "Esperanza Health Center",
+        "operator:type": "barangay_government",
+        "source": "Pilar LGU"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.732827,
+          13.0007454
+        ]
+      },
+      "id": "node/9731912596"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9772172136",
+        "amenity": "pharmacy",
+        "brand": "Generika",
+        "brand:wikidata": "Q62564876",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Generika"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7307867,
+          13.3573839
+        ]
+      },
+      "id": "node/9772172136"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9772172138",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "KimCare Pharma"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7304963,
+          13.358506
+        ]
+      },
+      "id": "node/9772172138"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10212070218",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Dr. Audwin Azada Clinic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.726879,
+          13.3549954
+        ]
+      },
+      "id": "node/10212070218"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10212070319",
+        "amenity": "hospital",
+        "name": "Elsenor Infirmary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7892285,
+          13.2936809
+        ]
+      },
+      "id": "node/10212070319"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10212070519",
+        "amenity": "clinic",
+        "name": "Ligao Medical Clinic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5410139,
+          13.239915
+        ]
+      },
+      "id": "node/10212070519"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10219251917",
+        "amenity": "clinic",
+        "healthcare": "clinic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7293357,
+          13.1476039
+        ]
+      },
+      "id": "node/10219251917"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10220881435",
+        "addr:city": "Legazpi",
+        "addr:floor": "G/F",
+        "addr:housename": "Gregorian Mall",
+        "addr:street": "Rizal Avenue",
+        "addr:street:corner": "Rosario Street",
+        "amenity": "pharmacy",
+        "brand": "South Star Drug",
+        "brand:wikidata": "Q7568544",
+        "healthcare": "pharmacy",
+        "level": "0",
+        "name": "South Star Drug",
+        "shop": "chemist"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7336684,
+          13.1389251
+        ]
+      },
+      "id": "node/10220881435"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10588490939",
+        "amenity": "clinic",
+        "name": "RABVAXX ABTC and Medical Clinic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7312064,
+          13.1401131
+        ]
+      },
+      "id": "node/10588490939"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10588551666",
+        "amenity": "clinic",
+        "name": "RABVAXX ABTC and Medical Clinic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5363956,
+          13.2409233
+        ]
+      },
+      "id": "node/10588551666"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11172077499",
+        "addr:city": "Legazpi",
+        "email": "tpreblora1978@gmail.com",
+        "healthcare": "speech_therapist;occupational_therapist;physiotherapist",
+        "mobile": "+63 092 392 2748",
+        "name": "Sunbeam Therapy and Tutorial Center",
+        "source": "PAOT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7338209,
+          13.2072155
+        ]
+      },
+      "id": "node/11172077499"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11195169337",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Dr. Anthony B. Arroyo Medical Ambulatory Clinic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6869217,
+          13.3524373
+        ]
+      },
+      "id": "node/11195169337"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11664444899",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Dr. Arroyo Pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6868944,
+          13.352415
+        ]
+      },
+      "id": "node/11664444899"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11925158167",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "C & E Pharma and Medical Supplies Trading"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7185731,
+          13.3573451
+        ]
+      },
+      "id": "node/11925158167"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11993378269",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "J. Garcia Medical Services"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5339937,
+          13.2372057
+        ]
+      },
+      "id": "node/11993378269"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12506106030",
+        "amenity": "doctors",
+        "healthcare": "doctor",
+        "healthcare:speciality": "paediatrics",
+        "name": "Children's and Babies Clinic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7271978,
+          13.3598865
+        ]
+      },
+      "id": "node/12506106030"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12629287560",
+        "amenity": "dentist",
+        "healthcare": "dentist"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7314164,
+          13.3581717
+        ]
+      },
+      "id": "node/12629287560"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12629287561",
+        "amenity": "clinic",
+        "healthcare": "clinic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7313723,
+          13.3582312
+        ]
+      },
+      "id": "node/12629287561"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12629287562",
+        "healthcare": "laboratory"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7313517,
+          13.3581305
+        ]
+      },
+      "id": "node/12629287562"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12841604530",
+        "addr:city": "Ligao",
+        "addr:province": "Albay",
+        "addr:street": "McKinley Street",
+        "amenity": "pharmacy",
+        "brand": "Watsons",
+        "brand:wikidata": "Q7974785",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Watsons"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5361233,
+          13.2406583
+        ]
+      },
+      "id": "node/12841604530"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12841604531",
+        "addr:city": "Ligao",
+        "addr:province": "Albay",
+        "addr:street": "McKinley Street",
+        "amenity": "pharmacy",
+        "brand": "Mercury Drug",
+        "brand:wikidata": "Q6818610",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Mercury Drug"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5402982,
+          13.2403371
+        ]
+      },
+      "id": "node/12841604531"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12841604532",
+        "addr:city": "Ligao",
+        "addr:province": "Albay",
+        "addr:street": "McKinley Street",
+        "amenity": "pharmacy",
+        "brand": "The Generics Pharmacy",
+        "brand:wikidata": "Q61948677",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "TGP",
+        "official_name": "The Generics Pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5380881,
+          13.2409925
+        ]
+      },
+      "id": "node/12841604532"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12852468478",
+        "amenity": "pharmacy",
+        "brand": "The Generics Pharmacy",
+        "brand:wikidata": "Q61948677",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "TGP",
+        "official_name": "The Generics Pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7533715,
+          13.1485761
+        ]
+      },
+      "id": "node/12852468478"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12852468479",
+        "addr:city": "Legazpi",
+        "addr:postcode": "4500",
+        "addr:province": "Albay",
+        "addr:street": "Rizal Street",
+        "amenity": "pharmacy",
+        "brand": "The Generics Pharmacy",
+        "brand:wikidata": "Q61948677",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "TGP",
+        "official_name": "The Generics Pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7525863,
+          13.1464327
+        ]
+      },
+      "id": "node/12852468479"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12852497937",
+        "addr:city": "Legazpi",
+        "addr:postcode": "4500",
+        "addr:province": "Albay",
+        "addr:street": "Quezon Avenue",
+        "amenity": "pharmacy",
+        "brand": "Generika",
+        "brand:wikidata": "Q62564876",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Generika"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.751956,
+          13.1480932
+        ]
+      },
+      "id": "node/12852497937"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12852497938",
+        "addr:city": "Legazpi",
+        "addr:postcode": "4500",
+        "addr:province": "Albay",
+        "addr:street": "Tabaco-Legazpi National Road",
+        "amenity": "pharmacy",
+        "brand": "The Generics Pharmacy",
+        "brand:wikidata": "Q61948677",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "TGP",
+        "official_name": "The Generics Pharmacy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7516529,
+          13.1715358
+        ]
+      },
+      "id": "node/12852497938"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12887598836",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Botica Zapanta"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7224188,
+          13.1466345
+        ]
+      },
+      "id": "node/12887598836"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12887598839",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Medgenta Drug"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7228728,
+          13.1465653
+        ]
+      },
+      "id": "node/12887598839"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13117166421",
+        "alt_name": "The Generics Pharmacy",
+        "amenity": "pharmacy",
+        "check_date": "2025-09-04",
+        "healthcare": "pharmacy",
+        "name": "TGP"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7280479,
+          13.3567467
+        ]
+      },
+      "id": "node/13117166421"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13584359760",
+        "amenity": "clinic",
+        "description": "Philhealth YAKAP Facility",
+        "name": "Municipal Health Office - Rural Health Unit Camalig"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6553965,
+          13.1822303
+        ]
+      },
+      "id": "node/13584359760"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13584387041",
+        "amenity": "clinic",
+        "description": "Philhealth YAKAP Facility",
+        "name": "Rural Health Unit Bacacay"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7909546,
+          13.2923252
+        ]
+      },
+      "id": "node/13584387041"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13584387047",
+        "amenity": "clinic",
+        "description": "Philhealth YAKAP Facility",
+        "name": "Binamira Medical Clinic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7915856,
+          13.2929726
+        ]
+      },
+      "id": "node/13584387047"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13584387056",
+        "amenity": "clinic",
+        "description": "Philhealth YAKAP Facility",
+        "name": "Juan Health Clinic Medical Inc."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7919062,
+          13.2883888
+        ]
+      },
+      "id": "node/13584387056"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13584466687",
+        "amenity": "clinic",
+        "description": "Philhealth YAKAP Facility",
+        "name": "JB Legazpi Medical Clinic and Diagnostic Laboratory"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7226435,
+          13.1467572
+        ]
+      },
+      "id": "node/13584466687"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13584490205",
+        "amenity": "clinic",
+        "description": "Philhealth YAKAP Facility",
+        "name": "Rural Health Unit Guinobatan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5971369,
+          13.1911021
+        ]
+      },
+      "id": "node/13584490205"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13584613953",
+        "amenity": "clinic",
+        "description": "Philhealth YAKAP Facility",
+        "name": "Ligao City Health Office"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5333754,
+          13.2382275
+        ]
+      },
+      "id": "node/13584613953"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13584702669",
+        "amenity": "clinic",
+        "description": "Philhealth YAKAP Facility",
+        "name": "Malinao Rural Health Unit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7055531,
+          13.3976496
+        ]
+      },
+      "id": "node/13584702669"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13597838038",
+        "amenity": "clinic",
+        "description": "Philhealth YAKAP Facility",
+        "name": "RHU Manito"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.8697613,
+          13.1225626
+        ]
+      },
+      "id": "node/13597838038"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13598041439",
+        "amenity": "clinic",
+        "description": "Philhealth YAKAP Facility",
+        "name": "RHU Sto. Domingo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7776308,
+          13.2372106
+        ]
+      },
+      "id": "node/13598041439"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13602167316",
+        "amenity": "clinic",
+        "description": "Philhealth YAKAP Facility",
+        "name": "Family Wellness K-Linik"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7333408,
+          13.3505552
+        ]
+      },
+      "id": "node/13602167316"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13602167343",
+        "amenity": "clinic",
+        "name": "Dr. Joel Ang"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.729638,
+          13.357724
+        ]
+      },
+      "id": "node/13602167343"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13602180482",
+        "amenity": "clinic",
+        "description": "Philhealth YAKAP Facility",
+        "name": "Mother and Child K-Linik"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6782777,
+          13.347738
+        ]
+      },
+      "id": "node/13602180482"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13602230039",
+        "amenity": "clinic",
+        "description": "Philhealth YAKAP Facility",
+        "name": "San Martin De Porres Primary Care Facility and Multi-specialty Clinic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7207012,
+          13.3581468
+        ]
+      },
+      "id": "node/13602230039"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13602236423",
+        "amenity": "clinic",
+        "description": "Philhealth YAKAP Facility",
+        "name": "San Miguel Lying-In K-Linik"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7741734,
+          13.3952243
+        ]
+      },
+      "id": "node/13602236423"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13602237190",
+        "amenity": "clinic",
+        "description": "Philhealth YAKAP Facility",
+        "name": "Southeast Occupational Health and Environmental Safety Services, Inc."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7505103,
+          13.1459906
+        ]
+      },
+      "id": "node/13602237190"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13602300543",
+        "amenity": "clinic",
+        "description": "Philhealth YAKAP Facility",
+        "name": "PremierMD Healthcare Clinic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7519278,
+          13.1481246
+        ]
+      },
+      "id": "node/13602300543"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13602373314",
+        "amenity": "clinic",
+        "description": "Philhealth YAKAP Facility",
+        "name": "Regional Medical and Dental Unit 5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7248261,
+          13.1456067
+        ]
+      },
+      "id": "node/13602373314"
+    }
+  ]
+}

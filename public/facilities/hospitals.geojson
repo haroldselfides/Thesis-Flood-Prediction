@@ -1,0 +1,1706 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7350367,
+          13.1463968
+        ]
+      },
+      "properties": {
+        "name": "University of Santo Tomas - Legazpi Hospital",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "hospital",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6019855,
+          13.1887002
+        ]
+      },
+      "properties": {
+        "name": "Garcia General Hospital",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "hospital",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7373685,
+          13.1382652
+        ]
+      },
+      "properties": {
+        "name": "Ibalong Medical Center",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "clinic",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7409247,
+          13.1381898
+        ]
+      },
+      "properties": {
+        "name": "Estevez Memorial Hospital",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "hospital",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7308994,
+          13.1396129
+        ]
+      },
+      "properties": {
+        "name": "Ago General Hospital",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "hospital",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7350109,
+          13.1383309
+        ]
+      },
+      "properties": {
+        "name": "Legazpi City Health Department Office",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "clinic",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.733083,
+          13.139345
+        ]
+      },
+      "properties": {
+        "name": "Albay Poly Clinic",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "clinic",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7313823,
+          13.1402685
+        ]
+      },
+      "properties": {
+        "name": "Clinic",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "clinic",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7428668,
+          13.1386482
+        ]
+      },
+      "properties": {
+        "name": "Sta Teresita Hospital",
+        "address": "Rizal Avenue",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "hospital",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7108915,
+          13.1550269
+        ]
+      },
+      "properties": {
+        "name": "Ciocson Medical Clinic",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "clinic",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7124338,
+          13.148437
+        ]
+      },
+      "properties": {
+        "name": "Daraga Municipal Health Office",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "clinic",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.720403,
+          13.1478595
+        ]
+      },
+      "properties": {
+        "name": "Central Link",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "clinic",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5960378,
+          13.1928767
+        ]
+      },
+      "properties": {
+        "name": "BUCAF Clinic",
+        "address": "Guinobatan",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "clinic",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "Mo-Fr 08:00-17:00",
+        "municipality": "guinobatan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7533086,
+          13.1498379
+        ]
+      },
+      "properties": {
+        "name": "Albay Doctors Hospital, Inc.",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "hospital",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7244055,
+          13.146863
+        ]
+      },
+      "properties": {
+        "name": "Bicol Regional Hospital and Medical Center",
+        "address": "Rizal Avenue, Daraga",
+        "barangay": "Sagpon",
+        "type": "Health Facility",
+        "amenity": "hospital",
+        "operator": "Department of Health",
+        "phone": "+6352 4831088;+6352 4830806;+6352 4830807 loc. 211",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.751883,
+          13.1437872
+        ]
+      },
+      "properties": {
+        "name": "Tanchuling General Hospital, Inc.",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "hospital",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7527278,
+          13.149964
+        ]
+      },
+      "properties": {
+        "name": "Salvosa Clinic",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "clinic",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.744704,
+          13.1454176
+        ]
+      },
+      "properties": {
+        "name": "Legazpi City Hospital",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "hospital",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.69593,
+          13.0703881
+        ]
+      },
+      "properties": {
+        "name": "Don Alfonso Bichara Memorial Hospital",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "hospital",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7336795,
+          13.1586359
+        ]
+      },
+      "properties": {
+        "name": "Allied Care Experts Medical Center - Legazpi",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "hospital",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6034612,
+          13.1894086
+        ]
+      },
+      "properties": {
+        "name": "Retuerma General Hospital",
+        "address": "Rizal Street",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "hospital",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7365619,
+          13.1383714
+        ]
+      },
+      "properties": {
+        "name": "Mercury Drug",
+        "address": "Rizal Avenue, Legazpi",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "pharmacy",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "06:00-23:00",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7525459,
+          13.1465512
+        ]
+      },
+      "properties": {
+        "name": "Mercury Drug",
+        "address": "Rizal Street, Legazpi",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "pharmacy",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7526835,
+          13.1469275
+        ]
+      },
+      "properties": {
+        "name": "South Star Drug",
+        "address": "Rizal Street, Legazpi",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "pharmacy",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.710082,
+          13.1555525
+        ]
+      },
+      "properties": {
+        "name": "Bethany Clinic",
+        "address": "Maharlika Highway",
+        "barangay": "Ba\u00f1ag",
+        "type": "Health Facility",
+        "amenity": "clinic",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7480168,
+          13.1411073
+        ]
+      },
+      "properties": {
+        "name": "Nuat Thai",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "clinic",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7495073,
+          13.1458811
+        ]
+      },
+      "properties": {
+        "name": "Legazpi Eye Center",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "doctors",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7204009,
+          13.1479241
+        ]
+      },
+      "properties": {
+        "name": "Central Link",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "doctors",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7331085,
+          13.1389219
+        ]
+      },
+      "properties": {
+        "name": "South Star Drug",
+        "address": "Rizal Avenue, Legazpi",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "pharmacy",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7229061,
+          13.1465376
+        ]
+      },
+      "properties": {
+        "name": "Pharmacia Cassandra",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "pharmacy",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7503568,
+          13.1462358
+        ]
+      },
+      "properties": {
+        "name": "City House of Maternity",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "clinic",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.749491,
+          13.1461352
+        ]
+      },
+      "properties": {
+        "name": "F. Ra\u00f1ola",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "clinic",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7140741,
+          13.1485658
+        ]
+      },
+      "properties": {
+        "name": "TGP",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "pharmacy",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7204055,
+          13.1480648
+        ]
+      },
+      "properties": {
+        "name": "Percy Avelino EENT",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "doctors",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7301299,
+          13.1406705
+        ]
+      },
+      "properties": {
+        "name": "Derma Medics",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "clinic",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7306087,
+          13.1402524
+        ]
+      },
+      "properties": {
+        "name": "Matza-Recierdo",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "clinic",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7300388,
+          13.1407527
+        ]
+      },
+      "properties": {
+        "name": "Daddy's Little Angels",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "clinic",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7330137,
+          13.1389234
+        ]
+      },
+      "properties": {
+        "name": "TGP",
+        "address": "Rizal Avenue, Legazpi",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "pharmacy",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7329794,
+          13.1389245
+        ]
+      },
+      "properties": {
+        "name": "Ultra Drug",
+        "address": "Rizal Avenue, Legazpi",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "pharmacy",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7372168,
+          13.1384687
+        ]
+      },
+      "properties": {
+        "name": "Albay Medical Specialists Clinic",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "clinic",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7478735,
+          13.1408196
+        ]
+      },
+      "properties": {
+        "name": "Legazpi Physical Therapy Center",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7476622,
+          13.1407408
+        ]
+      },
+      "properties": {
+        "name": "Skin Care Plus",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "clinic",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.752195,
+          13.1431938
+        ]
+      },
+      "properties": {
+        "name": "Diabetes Arthritis Wellness Center",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "clinic",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7510577,
+          13.1563025
+        ]
+      },
+      "properties": {
+        "name": "River of Life Medical Cllinic",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "clinic",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.752773,
+          13.1507018
+        ]
+      },
+      "properties": {
+        "name": "Dermedica",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "clinic",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7529993,
+          13.1500131
+        ]
+      },
+      "properties": {
+        "name": "Little Clinic",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "clinic",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7530996,
+          13.1495433
+        ]
+      },
+      "properties": {
+        "name": "The Medical Station",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "clinic",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7293349,
+          13.1415644
+        ]
+      },
+      "properties": {
+        "name": "OB-Gyne Clinic",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "clinic",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7331095,
+          13.1390109
+        ]
+      },
+      "properties": {
+        "name": "Zure Rx Drug",
+        "address": "Rizal Avenue, Legazpi",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "pharmacy",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7033786,
+          13.1589261
+        ]
+      },
+      "properties": {
+        "name": "Culliat Health Center",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "clinic",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7469997,
+          13.1405804
+        ]
+      },
+      "properties": {
+        "name": "JRI Pharmaceuticals",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "pharmacy",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7347268,
+          13.1432048
+        ]
+      },
+      "properties": {
+        "name": "Dr Lyn Georgia Dental Clinic",
+        "address": "Captain Fermin Aquende Drive, Legazpi",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "dentist",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7107781,
+          13.154137
+        ]
+      },
+      "properties": {
+        "name": "Daraga Doctors' Hospital, Inc.",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "hospital",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7296579,
+          13.144046
+        ]
+      },
+      "properties": {
+        "name": "Servants of Jesus",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "clinic",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7344066,
+          13.1498353
+        ]
+      },
+      "properties": {
+        "name": "Statcare Diagnostics",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "clinic",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.611152,
+          13.1927186
+        ]
+      },
+      "properties": {
+        "name": "Tiya Mimay Parahilot",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7128896,
+          13.1491628
+        ]
+      },
+      "properties": {
+        "name": "Daraga Rural Health Unit",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "doctors",
+        "operator": "Daraga Municipal LGU",
+        "phone": "+6352 824 7959;+6352 483 5325",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7248918,
+          13.1467912
+        ]
+      },
+      "properties": {
+        "name": "Bicol Regional Training and Teaching Hospital - Psychiatry Unit",
+        "address": "Rizal Avenue cor. Bagtang Road, Sagpon, Daraga, Albay",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.737403,
+          13.1383154
+        ]
+      },
+      "properties": {
+        "name": "Ibalong Medical Center (Bicol Medical Plaza)",
+        "address": "Rizal Avenue, Ilawod, Legazpi City, Albay",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7338866,
+          13.1393785
+        ]
+      },
+      "properties": {
+        "name": "Albay Polyclinic",
+        "address": "Gov. Locsin St., Ba\u00f1o, Legazpi City, Albay",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7349139,
+          13.1464621
+        ]
+      },
+      "properties": {
+        "name": "University of Santo Tomas - Legazpi Hospital",
+        "address": "F. Aquende Drive cor. Benny Imperial St., Brgy. 16 Kawit - East Washington Drive, Albay District, Legazpi City, Albay",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "",
+        "operator": "",
+        "phone": "(052) 225 1370",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7196924,
+          13.1479143
+        ]
+      },
+      "properties": {
+        "name": "Cresche School Psychological Clinic",
+        "address": "110-1Rizal St.,Sagpon, Daraga, Albay 4501",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "",
+        "operator": "",
+        "phone": "(052)4830330; 0998-9922969",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.751942,
+          13.1438582
+        ]
+      },
+      "properties": {
+        "name": "Tanchuling General Hospital, Inc.",
+        "address": "Rosal St., Imperial Court Subdivision Phase II, Rizal, Legazpi City, Albay",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "",
+        "operator": "",
+        "phone": "(052) 480 6302",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.744083,
+          13.1461787
+        ]
+      },
+      "properties": {
+        "name": "Children & Youth Wellness, Technical & Advocacy Center (CYWTAC), Inc.",
+        "address": "Hi-Tone Bldg., F. Imperial St., Bitano, Legazpi City, Albay",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "",
+        "operator": "",
+        "phone": "(052) 201 9889",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7390968,
+          13.1387294
+        ]
+      },
+      "properties": {
+        "name": "LMC Neuro-psychiatric Testing Center",
+        "address": "3rd Floor Encarnacion Bldg., Rizal Avenue, Brgy. 17 Ilawod, Legazpi City, Albay",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "",
+        "operator": "",
+        "phone": "09984656052",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.744539,
+          13.143986
+        ]
+      },
+      "properties": {
+        "name": "UST Clinic",
+        "address": "3rd Floor, SM City Legazpi, Bitano, Legazpi City, Albay",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "",
+        "operator": "",
+        "phone": "(052) 742 0367",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7409395,
+          13.1381482
+        ]
+      },
+      "properties": {
+        "name": "Estevez Memorial Hospital, Inc.",
+        "address": "Don Juan Estevez St., Ilawod East, Legazpi City, Albay",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "",
+        "operator": "",
+        "phone": "(052) 245 5031",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7278542,
+          13.1436559
+        ]
+      },
+      "properties": {
+        "name": "Children of Abraham Puericulture Center",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "hospital",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "24/7",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7336684,
+          13.1389251
+        ]
+      },
+      "properties": {
+        "name": "South Star Drug",
+        "address": "Rizal Avenue, Legazpi",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "pharmacy",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7338209,
+          13.2072155
+        ]
+      },
+      "properties": {
+        "name": "Sunbeam Therapy and Tutorial Center",
+        "address": "Legazpi",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7525863,
+          13.1464327
+        ]
+      },
+      "properties": {
+        "name": "TGP",
+        "address": "Rizal Street, Legazpi",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "pharmacy",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.751956,
+          13.1480932
+        ]
+      },
+      "properties": {
+        "name": "Generika",
+        "address": "Quezon Avenue, Legazpi",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "pharmacy",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7516529,
+          13.1715358
+        ]
+      },
+      "properties": {
+        "name": "TGP",
+        "address": "Tabaco-Legazpi National Road, Legazpi",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "pharmacy",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7224188,
+          13.1466345
+        ]
+      },
+      "properties": {
+        "name": "Botica Zapanta",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "pharmacy",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7228728,
+          13.1465653
+        ]
+      },
+      "properties": {
+        "name": "Medgenta Drug",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "pharmacy",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6553965,
+          13.1822303
+        ]
+      },
+      "properties": {
+        "name": "Municipal Health Office - Rural Health Unit Camalig",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "clinic",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7226435,
+          13.1467572
+        ]
+      },
+      "properties": {
+        "name": "JB Legazpi Medical Clinic and Diagnostic Laboratory",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "clinic",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5971369,
+          13.1911021
+        ]
+      },
+      "properties": {
+        "name": "Rural Health Unit Guinobatan",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "clinic",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7505103,
+          13.1459906
+        ]
+      },
+      "properties": {
+        "name": "Southeast Occupational Health and Environmental Safety Services, Inc.",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "clinic",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7519278,
+          13.1481246
+        ]
+      },
+      "properties": {
+        "name": "PremierMD Healthcare Clinic",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "clinic",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7248261,
+          13.1456067
+        ]
+      },
+      "properties": {
+        "name": "Regional Medical and Dental Unit 5",
+        "address": "",
+        "barangay": "",
+        "type": "Health Facility",
+        "amenity": "clinic",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    }
+  ]
+}

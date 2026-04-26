@@ -1,0 +1,154 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-04-25T07:01:28Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/247805127",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "Legazpi City Fire Station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7599326,
+          13.1415213
+        ]
+      },
+      "id": "way/247805127"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/426065904",
+        "addr:city": "Tabaco City",
+        "addr:postcode": "4511",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "Tsinoy Fire Volunteer",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7275783,
+          13.3577252
+        ]
+      },
+      "id": "way/426065904"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/555473082",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "Malilipot Fire Station",
+        "operator": "Bureau of Fire Protection",
+        "operator:type": "government",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7371303,
+          13.3230991
+        ]
+      },
+      "id": "way/555473082"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/602898030",
+        "amenity": "fire_station",
+        "name": "Fire Station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7774266,
+          13.2373038
+        ]
+      },
+      "id": "node/602898030"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/691109223",
+        "addr:street": "Legazpi-Santo Domingo-Tabaco Road",
+        "amenity": "fire_station",
+        "building": "yes",
+        "name": "Bureau of Fire Protection Tabaco City",
+        "operator": "Bureau of Fire Protection",
+        "operator:wikidata": "Q17027200",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7227377,
+          13.3703535
+        ]
+      },
+      "id": "way/691109223"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1452602901",
+        "alt_name": "Guinobatan Fire Station",
+        "amenity": "fire_station",
+        "area": "yes",
+        "name": "BUREAU OF FIRE PROTECTION",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6122329,
+          13.1905229
+        ]
+      },
+      "id": "way/1452602901"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2644986922",
+        "amenity": "fire_station",
+        "name": "Guinobatan Fire Station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5991358,
+          13.1915623
+        ]
+      },
+      "id": "node/2644986922"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3942716768",
+        "amenity": "fire_station",
+        "name": "Bureau of Fire Protection"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7527385,
+          13.1514912
+        ]
+      },
+      "id": "node/3942716768"
+    }
+  ]
+}

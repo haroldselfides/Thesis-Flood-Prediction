@@ -1,0 +1,89 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7599326,
+          13.1415213
+        ]
+      },
+      "properties": {
+        "name": "Legazpi City Fire Station",
+        "address": "",
+        "barangay": "",
+        "type": "Fire Station",
+        "amenity": "fire_station",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6122329,
+          13.1905229
+        ]
+      },
+      "properties": {
+        "name": "BUREAU OF FIRE PROTECTION",
+        "address": "",
+        "barangay": "",
+        "type": "Fire Station",
+        "amenity": "fire_station",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5991358,
+          13.1915623
+        ]
+      },
+      "properties": {
+        "name": "Guinobatan Fire Station",
+        "address": "",
+        "barangay": "",
+        "type": "Fire Station",
+        "amenity": "fire_station",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7527385,
+          13.1514912
+        ]
+      },
+      "properties": {
+        "name": "Bureau of Fire Protection",
+        "address": "",
+        "barangay": "",
+        "type": "Fire Station",
+        "amenity": "fire_station",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    }
+  ]
+}

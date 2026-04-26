@@ -1,0 +1,3407 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7361806,
+          13.1409238
+        ]
+      },
+      "properties": {
+        "name": "Albay Central School",
+        "address": "Fr. Bates Street, Legazpi",
+        "barangay": "East Washington Drive",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Albay I District Legaspi City Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7462318,
+          13.1425395
+        ]
+      },
+      "properties": {
+        "name": "Legazpi Hope Christian School",
+        "address": "St Vincent Village, Legazpi City",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6094261,
+          13.190258
+        ]
+      },
+      "properties": {
+        "name": "Marcial O. Ra\u00f1ola Memorial School",
+        "address": "Guinobatan",
+        "barangay": "San Francisco",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Guinobatan East District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "guinobatan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6110815,
+          13.1892644
+        ]
+      },
+      "properties": {
+        "name": "Travesia Elementary School",
+        "address": "Maharlika Highway, Guinobatan",
+        "barangay": "Travesia",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Guinobatan East District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "guinobatan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5975195,
+          13.1905626
+        ]
+      },
+      "properties": {
+        "name": "Guinobatan West Central School",
+        "address": "M. H. del Pilar Street, Guinobatan",
+        "barangay": "Calzada",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Department of Education",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "guinobatan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6027624,
+          13.1891184
+        ]
+      },
+      "properties": {
+        "name": "Guinobatan East Central School",
+        "address": "General Simeon A. Ola Road, Guinobatan",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Guinobatan East District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "guinobatan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7260965,
+          13.0951499
+        ]
+      },
+      "properties": {
+        "name": "Mariawa Elementary School",
+        "address": "Legazpi",
+        "barangay": "Barangay 63",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Albay I District Legaspi City Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7417064,
+          13.1395739
+        ]
+      },
+      "properties": {
+        "name": "St. Agnes Academy",
+        "address": "Rizal Avenue, Legazpi",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7534824,
+          13.1361689
+        ]
+      },
+      "properties": {
+        "name": "Buraguis Elementary School",
+        "address": "Buraguis Road, Legazpi",
+        "barangay": "Buraguis",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Legazpi Port I District Legaspi City Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6994187,
+          13.0745857
+        ]
+      },
+      "properties": {
+        "name": "Anislag Elementary School",
+        "address": "Daraga",
+        "barangay": "Anislag",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6330184,
+          13.1619513
+        ]
+      },
+      "properties": {
+        "name": "Anoling Elementary School",
+        "address": "Camalig",
+        "barangay": "FVR-FNM Village",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Camalig North District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "camalig"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6966951,
+          13.1052951
+        ]
+      },
+      "properties": {
+        "name": "Anislag National High School \u2013 Bascaran High School Extension",
+        "address": "Daraga",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5820119,
+          13.2057941
+        ]
+      },
+      "properties": {
+        "name": "Binogsacan Elementary School",
+        "address": "Rizal Street, Guinobatan",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Guinobatan West District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "guinobatan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6711291,
+          13.1837263
+        ]
+      },
+      "properties": {
+        "name": "Cabangan Elementary School",
+        "address": "Camalig",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Camalig North District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "camalig"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5822282,
+          13.2047978
+        ]
+      },
+      "properties": {
+        "name": "Lower Binogsacan High School",
+        "address": "Guinobatan",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Guinobatan West District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "guinobatan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7014331,
+          13.1186268
+        ]
+      },
+      "properties": {
+        "name": "Tabontabon Elementary School",
+        "address": "Daraga",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6664519,
+          13.0998891
+        ]
+      },
+      "properties": {
+        "name": "Del Rosario Elementary School",
+        "address": "Camalig",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Camalig South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "camalig"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.744298,
+          13.1165182
+        ]
+      },
+      "properties": {
+        "name": "Taysan Elementary School",
+        "address": "Legazpi",
+        "barangay": "Centro Taysan",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Albay II District Legaspi City Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6853615,
+          13.1719259
+        ]
+      },
+      "properties": {
+        "name": "Upper Malabog Elementary School",
+        "address": "Daraga",
+        "barangay": "Centro Malabog",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga North District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7175309,
+          13.1472421
+        ]
+      },
+      "properties": {
+        "name": "Daraga National High School",
+        "address": "Daraga",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga North District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7162898,
+          13.1553038
+        ]
+      },
+      "properties": {
+        "name": "Binitayan Elementary School",
+        "address": "Daraga",
+        "barangay": "Binitayan",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga North District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7158106,
+          13.1440668
+        ]
+      },
+      "properties": {
+        "name": "Daraga North Central School",
+        "address": "Daraga",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga North District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7541798,
+          13.1486214
+        ]
+      },
+      "properties": {
+        "name": "Legazpi Port Elementary School",
+        "address": "Aguinaldo Street, Legazpi",
+        "barangay": "Centro Baybay",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Legazpi Port I District Legaspi City Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7526129,
+          13.1486812
+        ]
+      },
+      "properties": {
+        "name": "Ibalon Central School",
+        "address": "Magallanes Street, Legazpi",
+        "barangay": "Oro Site",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Legazpi Port I District Legaspi City Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7352538,
+          13.1418196
+        ]
+      },
+      "properties": {
+        "name": "Bagumbayan Central School",
+        "address": "Captain Fermin Aquende Drive, Legazpi",
+        "barangay": "Bagumbayan",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Albay II District Legaspi City Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6583011,
+          13.1853144
+        ]
+      },
+      "properties": {
+        "name": "Camalig North Central School",
+        "address": "Rizal Street, Camalig",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Camalig North District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "camalig"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6811879,
+          13.1749786
+        ]
+      },
+      "properties": {
+        "name": "Impact Learning Center",
+        "address": "Daraga",
+        "barangay": "Purok 2",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga North District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7394735,
+          13.0912276
+        ]
+      },
+      "properties": {
+        "name": "Homapon Elementary School",
+        "address": "Legazpi",
+        "barangay": "Homapon",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Albay I District Legaspi City Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5587772,
+          13.1234903
+        ]
+      },
+      "properties": {
+        "name": "Malipo Elementary School",
+        "address": "Guinobatan",
+        "barangay": "Purok 2",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Guinobatan West District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "guinobatan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5598016,
+          13.1228827
+        ]
+      },
+      "properties": {
+        "name": "Malipo National High School",
+        "address": "Guinobatan",
+        "barangay": "Malipo",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Guinobatan West District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "guinobatan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.8049541,
+          13.0488928
+        ]
+      },
+      "properties": {
+        "name": "Buenavista Elementary School",
+        "address": "Legazpi",
+        "barangay": "Buenavista",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Albay II District Legaspi City Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5903155,
+          13.1290478
+        ]
+      },
+      "properties": {
+        "name": "Dona Mercedes Elementary School",
+        "address": "Guinobatan",
+        "barangay": "Do\u00f1a Mercedes",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Guinobatan West District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "guinobatan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6000806,
+          13.1272124
+        ]
+      },
+      "properties": {
+        "name": "Iluluan Elementary School",
+        "address": "General Simeon A. Ola Road, Camalig",
+        "barangay": "Purok 2",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Camalig North District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "camalig"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5970613,
+          13.1418292
+        ]
+      },
+      "properties": {
+        "name": "Maipon Elementary School",
+        "address": "Guinobatan",
+        "barangay": "Mauraro",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Guinobatan East District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "guinobatan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5983911,
+          13.1490073
+        ]
+      },
+      "properties": {
+        "name": "Mauraro High School",
+        "address": "Guinobatan",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Guinobatan West District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "guinobatan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6390464,
+          13.1659235
+        ]
+      },
+      "properties": {
+        "name": "Tagaytay Elementary School",
+        "address": "Camalig",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Camalig South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "camalig"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6431317,
+          13.1526225
+        ]
+      },
+      "properties": {
+        "name": "Baligang Elementary School",
+        "address": "Camalig",
+        "barangay": "Baligang",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Camalig South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "camalig"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5752705,
+          13.1597028
+        ]
+      },
+      "properties": {
+        "name": "Mapaco Elementary School",
+        "address": "Guinobatan",
+        "barangay": "Mapaco",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Guinobatan West District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "guinobatan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7562628,
+          13.2079692
+        ]
+      },
+      "properties": {
+        "name": "Padang Elementary School",
+        "address": "Legazpi",
+        "barangay": "Padang",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Legazpi Port II District Legaspi City Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7541544,
+          13.1940805
+        ]
+      },
+      "properties": {
+        "name": "Bigaa Elementary School",
+        "address": "Legazpi",
+        "barangay": "Bigaa",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Legazpi Port II District",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7512771,
+          13.17228
+        ]
+      },
+      "properties": {
+        "name": "Rawis Elementary School",
+        "address": "Tabaco-Legazpi National Road, Legazpi",
+        "barangay": "Rawis",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Legazpi Port II District Legaspi City Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6635828,
+          13.1194948
+        ]
+      },
+      "properties": {
+        "name": "Cotmon National High School",
+        "address": "Camalig",
+        "barangay": "Cotmon",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Camalig South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "camalig"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6599013,
+          13.1299464
+        ]
+      },
+      "properties": {
+        "name": "Comun Elementary School",
+        "address": "Camalig",
+        "barangay": "Comun",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Camalig South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "camalig"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6752568,
+          13.1336383
+        ]
+      },
+      "properties": {
+        "name": "Inarado Elementary School",
+        "address": "Daraga",
+        "barangay": "Inarado",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7043679,
+          13.1308999
+        ]
+      },
+      "properties": {
+        "name": "Pe\u00f1afrancia Elementary School",
+        "address": "Daraga",
+        "barangay": "Penafrancia",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga North District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6237798,
+          13.0258285
+        ]
+      },
+      "properties": {
+        "name": "Ibaugan Elementary School",
+        "address": "Daraga",
+        "barangay": "Purok 2",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6586031,
+          13.043311
+        ]
+      },
+      "properties": {
+        "name": "San Rafael Elementary School",
+        "address": "Daraga",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6650622,
+          13.0329567
+        ]
+      },
+      "properties": {
+        "name": "San Vicente Grande Elementary School",
+        "address": "Daraga",
+        "barangay": "San Vicente Grande",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6763245,
+          13.0344701
+        ]
+      },
+      "properties": {
+        "name": "Bigao Elementary School",
+        "address": "Daraga",
+        "barangay": "Bigao",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7276145,
+          13.1873975
+        ]
+      },
+      "properties": {
+        "name": "Bog\u00f1a Elementary School",
+        "address": "Legazpi",
+        "barangay": "Bog\u00f1a",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Albay I District Legaspi City Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7404523,
+          13.0941175
+        ]
+      },
+      "properties": {
+        "name": "Homapon High School",
+        "address": "Legazpi",
+        "barangay": "Homapon",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Albay I District Legaspi City Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.72415,
+          13.0639439
+        ]
+      },
+      "properties": {
+        "name": "Imalnod Elementary School",
+        "address": "Legazpi",
+        "barangay": "Imalnod",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Albay I District Legaspi City Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6814955,
+          13.1766852
+        ]
+      },
+      "properties": {
+        "name": "Malabog National High School",
+        "address": "Daraga",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga North District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6088199,
+          13.1563105
+        ]
+      },
+      "properties": {
+        "name": "Do\u00f1a Elena Mitri Garcia Elementary School",
+        "address": "Guinobatan",
+        "barangay": "Purok 7",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Guinobatan West District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "guinobatan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.730079,
+          13.1462072
+        ]
+      },
+      "properties": {
+        "name": "EM's Barrio Elementary School",
+        "address": "BUCIT Road, Legazpi",
+        "barangay": "EM's Barrio",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Albay II District Legaspi City Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5932594,
+          13.1095101
+        ]
+      },
+      "properties": {
+        "name": "Pariaan National High School",
+        "address": "General Simeon A. Ola Road, Camalig",
+        "barangay": "Pariaan",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Camalig North District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "camalig"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6818765,
+          13.0765461
+        ]
+      },
+      "properties": {
+        "name": "Maopi Elementary School",
+        "address": "Daraga",
+        "barangay": "Zone 3",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7420092,
+          13.1808901
+        ]
+      },
+      "properties": {
+        "name": "San Joaquin Elementary School",
+        "address": "Legazpi",
+        "barangay": "San Joaquin",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Legazpi Port II District Legaspi City Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7417951,
+          13.1764862
+        ]
+      },
+      "properties": {
+        "name": "Dita Elementary School",
+        "address": "Legazpi",
+        "barangay": "Dita",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Legazpi Port II District Legaspi City Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7083138,
+          13.1829654
+        ]
+      },
+      "properties": {
+        "name": "Matnog Elementary School",
+        "address": "Daraga",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga North District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7148295,
+          13.1743782
+        ]
+      },
+      "properties": {
+        "name": "Alcala Elementary School",
+        "address": "Daraga",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga North District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7152064,
+          13.1597257
+        ]
+      },
+      "properties": {
+        "name": "Kilicao Elementary School",
+        "address": "Daraga",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga North District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7044896,
+          13.1560841
+        ]
+      },
+      "properties": {
+        "name": "Cullat Elementary School",
+        "address": "Daraga",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga North District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7122653,
+          13.1220287
+        ]
+      },
+      "properties": {
+        "name": "Gabawan Elementary School",
+        "address": "Daraga",
+        "barangay": "Purok 2",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7102678,
+          13.0985771
+        ]
+      },
+      "properties": {
+        "name": "Talahib Elementary School",
+        "address": "Daraga",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6970022,
+          13.0910499
+        ]
+      },
+      "properties": {
+        "name": "Namantao Elementary School",
+        "address": "Daraga",
+        "barangay": "Namantao",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6931516,
+          13.0636398
+        ]
+      },
+      "properties": {
+        "name": "Budiao Elementary School",
+        "address": "Daraga",
+        "barangay": "Anislag",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga North District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7052796,
+          13.0588233
+        ]
+      },
+      "properties": {
+        "name": "Mayon Elementary School",
+        "address": "Daraga",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6925558,
+          13.0490817
+        ]
+      },
+      "properties": {
+        "name": "San Ramon Elementary School",
+        "address": "Daraga",
+        "barangay": "San Ramon",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7123284,
+          13.0426637
+        ]
+      },
+      "properties": {
+        "name": "Villahermosa Elementary School",
+        "address": "Daraga",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6467537,
+          13.0355391
+        ]
+      },
+      "properties": {
+        "name": "Nabasan Elementary School",
+        "address": "Daraga",
+        "barangay": "Purok 2",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5326535,
+          13.0904566
+        ]
+      },
+      "properties": {
+        "name": "Pood Elementary School",
+        "address": "Guinobatan",
+        "barangay": "Pood",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Guinobatan West District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "guinobatan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5563961,
+          13.170499
+        ]
+      },
+      "properties": {
+        "name": "Dr. Felipe Cevallos Elementary School",
+        "address": "Guinobatan",
+        "barangay": "Agpay",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Guinobatan East District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "guinobatan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6543606,
+          13.1384447
+        ]
+      },
+      "properties": {
+        "name": "Taladong Elementary School",
+        "address": "Camalig",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Camalig South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "camalig"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6498215,
+          13.1578746
+        ]
+      },
+      "properties": {
+        "name": "Gotob Elementary School",
+        "address": "Camalig",
+        "barangay": "Barangay 5",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Camalig South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "camalig"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.665334,
+          13.1472757
+        ]
+      },
+      "properties": {
+        "name": "Tagoytoy Elementary School",
+        "address": "Camalig",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Camalig South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "camalig"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6808265,
+          13.1544054
+        ]
+      },
+      "properties": {
+        "name": "Lacag Elementary School",
+        "address": "Daraga",
+        "barangay": "Lacag",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6851307,
+          13.135958
+        ]
+      },
+      "properties": {
+        "name": "Gapo Elementary School",
+        "address": "Daraga",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.692256,
+          13.1370512
+        ]
+      },
+      "properties": {
+        "name": "De la Paz Elementary School",
+        "address": "Daraga",
+        "barangay": "De La Paz",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6935515,
+          13.1609532
+        ]
+      },
+      "properties": {
+        "name": "Busay Elementary School",
+        "address": "Daraga",
+        "barangay": "Purok 2",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga North District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6564908,
+          13.1953705
+        ]
+      },
+      "properties": {
+        "name": "Quirangay Elementary School",
+        "address": "Camalig",
+        "barangay": "Quirangay",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Camalig North District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "camalig"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7795258,
+          13.0077226
+        ]
+      },
+      "properties": {
+        "name": "Cagbacong Elementary School",
+        "address": "Legazpi",
+        "barangay": "Cagbacong",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Albay II District Legaspi City Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.76093,
+          13.0708264
+        ]
+      },
+      "properties": {
+        "name": "Bagacay Elementary School",
+        "address": "Legazpi",
+        "barangay": "Bagacay",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Albay II District Legaspi City Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7831829,
+          13.0372311
+        ]
+      },
+      "properties": {
+        "name": "San Francisco Elementary School",
+        "address": "Legazpi",
+        "barangay": "San Francisco",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Albay II District Legaspi City Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7609086,
+          13.1355767
+        ]
+      },
+      "properties": {
+        "name": "Puro Elementary School",
+        "address": "Legazpi",
+        "barangay": "Puro",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Legazpi Port I District Legaspi City Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7790792,
+          13.1212807
+        ]
+      },
+      "properties": {
+        "name": "Lamba Elementary School",
+        "address": "Legazpi",
+        "barangay": "Lamba",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Legazpi Port I District Legaspi City Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7740272,
+          13.1025715
+        ]
+      },
+      "properties": {
+        "name": "Maslog National High School",
+        "address": "Legazpi",
+        "barangay": "Maslog",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Legazpi Port I District Legaspi City Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7708616,
+          13.1018956
+        ]
+      },
+      "properties": {
+        "name": "Maslog Elementary School",
+        "address": "Taysan - Maslog Road, Legazpi",
+        "barangay": "Maslog",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Legazpi Port I District Legaspi City Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7589658,
+          13.1407527
+        ]
+      },
+      "properties": {
+        "name": "Dapdap Elementary School",
+        "address": "Legazpi",
+        "barangay": "Dapdap",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Legazpi Port I District Legaspi City Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7443855,
+          13.022866
+        ]
+      },
+      "properties": {
+        "name": "Bariis Elementary School",
+        "address": "Legazpi",
+        "barangay": "Bariis",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Albay II District Legaspi City Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7560637,
+          13.1444599
+        ]
+      },
+      "properties": {
+        "name": "Victory Village Elementary School",
+        "address": "Legazpi",
+        "barangay": "Victory Village",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Legazpi Port I District Legaspi City Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7170062,
+          13.1841524
+        ]
+      },
+      "properties": {
+        "name": "Mabinit Elementary School",
+        "address": "Legazpi",
+        "barangay": "Mabinit",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Albay I District Legaspi City Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7393422,
+          13.1882374
+        ]
+      },
+      "properties": {
+        "name": "Bagong Abre Elementary School",
+        "address": "Legazpi",
+        "barangay": "Bagong Abre",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Legazpi Port II District Legaspi City Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7342594,
+          13.1962506
+        ]
+      },
+      "properties": {
+        "name": "Matanag Elementary School",
+        "address": "Legazpi",
+        "barangay": "Matanag",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Legazpi Port II District Legaspi City Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.742753,
+          13.2032588
+        ]
+      },
+      "properties": {
+        "name": "Buyoan Elementary School",
+        "address": "Legazpi",
+        "barangay": "Buyoan",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Legazpi Port II District Legaspi City Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7410103,
+          13.1732876
+        ]
+      },
+      "properties": {
+        "name": "Tamaoyan Elementary School",
+        "address": "Legazpi",
+        "barangay": "Tamaoyan",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Legazpi Port II District Legaspi City Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7331269,
+          13.1615617
+        ]
+      },
+      "properties": {
+        "name": "Bogtong Elementary School",
+        "address": "Lignon Street, Legazpi",
+        "barangay": "Bogtong",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Albay I District Legaspi City Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7239645,
+          13.1500014
+        ]
+      },
+      "properties": {
+        "name": "Maroroy Elementary School",
+        "address": "Daraga",
+        "barangay": "Maroroy",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga North District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7141764,
+          13.169156
+        ]
+      },
+      "properties": {
+        "name": "Kilicao High School",
+        "address": "Daraga",
+        "barangay": "Purok 2",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga North District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6818115,
+          13.1560744
+        ]
+      },
+      "properties": {
+        "name": "Lacag National High School",
+        "address": "Daraga",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6961479,
+          13.1564283
+        ]
+      },
+      "properties": {
+        "name": "Bongalon Elementary School",
+        "address": "Daraga",
+        "barangay": "Bongalon",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga North District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6993143,
+          13.1493326
+        ]
+      },
+      "properties": {
+        "name": "Kidaco Elementary School",
+        "address": "Daraga",
+        "barangay": "Kidaco",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga North District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7088231,
+          13.1545827
+        ]
+      },
+      "properties": {
+        "name": "Ba\u00f1ag Elementary School",
+        "address": "Daraga",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga North District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7125074,
+          13.1592765
+        ]
+      },
+      "properties": {
+        "name": "Malobago Elementary School",
+        "address": "Daraga",
+        "barangay": "Anislag Resettlement",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga North District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6975126,
+          13.1043692
+        ]
+      },
+      "properties": {
+        "name": "Bascaran Elementary School",
+        "address": "Daraga",
+        "barangay": "Bascaran Centro",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga South District",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7292879,
+          13.1226481
+        ]
+      },
+      "properties": {
+        "name": "Estanza Elementary School",
+        "address": "Legazpi",
+        "barangay": "Estanza",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Albay II District Legaspi City Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7160157,
+          13.134396
+        ]
+      },
+      "properties": {
+        "name": "Kiwalo Elementary School",
+        "address": "Daraga",
+        "barangay": "Purok 2",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga North District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6803219,
+          13.1810073
+        ]
+      },
+      "properties": {
+        "name": "Mi-isi Elementary School",
+        "address": "Daraga",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga North District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6373587,
+          13.1801874
+        ]
+      },
+      "properties": {
+        "name": "Libod Elementary School",
+        "address": "Camalig",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Camalig North District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "camalig"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6381052,
+          13.1986608
+        ]
+      },
+      "properties": {
+        "name": "Tumpa Elementary School",
+        "address": "Camalig",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Camalig North District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "camalig"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6280144,
+          13.2089357
+        ]
+      },
+      "properties": {
+        "name": "Maninila Elementary School",
+        "address": "Guinobatan",
+        "barangay": "Maninila",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Guinobatan East District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "guinobatan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6979665,
+          13.1414498
+        ]
+      },
+      "properties": {
+        "name": "Balinad Elementary School",
+        "address": "Daraga",
+        "barangay": "Balinad",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga North District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5651287,
+          13.1999573
+        ]
+      },
+      "properties": {
+        "name": "Lomacao Elementary School",
+        "address": "Guinobatan",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Guinobatan West District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "guinobatan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6200094,
+          13.1170737
+        ]
+      },
+      "properties": {
+        "name": "Caguiba Elementary School",
+        "address": "Camalig",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Camalig South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "camalig"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6183733,
+          13.1169111
+        ]
+      },
+      "properties": {
+        "name": "Caguiba National High School",
+        "address": "Camalig",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Camalig South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "camalig"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.533299,
+          13.1014769
+        ]
+      },
+      "properties": {
+        "name": "Balite Elementary School",
+        "address": "Guinobatan",
+        "barangay": "Balite",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Guinobatan West District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "guinobatan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6070006,
+          13.1765048
+        ]
+      },
+      "properties": {
+        "name": "Don Juan Garcia Elementary School",
+        "address": "General Simeon A. Ola Road, Guinobatan",
+        "barangay": "Quitago",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Guinobatan East District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "guinobatan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5936956,
+          13.1988645
+        ]
+      },
+      "properties": {
+        "name": "Morera Elementary School",
+        "address": "Guinobatan",
+        "barangay": "Morera",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Guinobatan West District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "guinobatan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5987657,
+          13.2130868
+        ]
+      },
+      "properties": {
+        "name": "Rebagay Foundation Elementary School",
+        "address": "Guinobatan",
+        "barangay": "Maipon",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Guinobatan East District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "guinobatan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5941959,
+          13.2261294
+        ]
+      },
+      "properties": {
+        "name": "Bubulusan Elementary School",
+        "address": "Guinobatan",
+        "barangay": "Bubulusan",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Guinobatan East District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "guinobatan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5839894,
+          13.2172541
+        ]
+      },
+      "properties": {
+        "name": "Inascan Elementary School",
+        "address": "Guinobatan",
+        "barangay": "Inascan",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Guinobatan East District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "guinobatan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6740311,
+          13.1116807
+        ]
+      },
+      "properties": {
+        "name": "Alobo Elementary School",
+        "address": "Daraga",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6842664,
+          13.0972892
+        ]
+      },
+      "properties": {
+        "name": "Burgos Elementary School",
+        "address": "Daraga",
+        "barangay": "Burgos",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6797054,
+          13.094441
+        ]
+      },
+      "properties": {
+        "name": "Mabini Elementary School",
+        "address": "Daraga",
+        "barangay": "Mabini",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.671813,
+          13.0898515
+        ]
+      },
+      "properties": {
+        "name": "Kinawitan Elementary School",
+        "address": "Daraga",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6730789,
+          13.0785312
+        ]
+      },
+      "properties": {
+        "name": "San Vicente Peque\u00f1o Elementary School",
+        "address": "Daraga",
+        "barangay": "San Vicente Peque\u00f1o",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6649224,
+          13.1153972
+        ]
+      },
+      "properties": {
+        "name": "Cotmon Elementary School",
+        "address": "Camalig",
+        "barangay": "Cotmon",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Camalig South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "camalig"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.640126,
+          13.0774476
+        ]
+      },
+      "properties": {
+        "name": "Taloto Elementary School",
+        "address": "Camalig",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Camalig South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "camalig"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6401582,
+          13.092976
+        ]
+      },
+      "properties": {
+        "name": "Taplacon Elementary School",
+        "address": "Camalig",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Camalig South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "camalig"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6540018,
+          13.1018126
+        ]
+      },
+      "properties": {
+        "name": "Maninila Elementary School",
+        "address": "Camalig",
+        "barangay": "Maninila",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Camalig South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "camalig"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6158727,
+          13.1465799
+        ]
+      },
+      "properties": {
+        "name": "Palanog Elementary School",
+        "address": "Camalig",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Camalig North District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "camalig"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.602152,
+          13.1032168
+        ]
+      },
+      "properties": {
+        "name": "Binanderahan Elementary School",
+        "address": "Camalig",
+        "barangay": "Purok 2",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Camalig North District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "camalig"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6069055,
+          13.1333212
+        ]
+      },
+      "properties": {
+        "name": "Miti Elementary School",
+        "address": "Camalig",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Camalig North District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "camalig"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5190591,
+          13.0956041
+        ]
+      },
+      "properties": {
+        "name": "Ongo Elementary School",
+        "address": "Guinobatan",
+        "barangay": "Ongo",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Guinobatan West District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "guinobatan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5272198,
+          13.1243996
+        ]
+      },
+      "properties": {
+        "name": "Dona Irene Elementary School",
+        "address": "Guinobatan",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Guinobatan West District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "guinobatan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5176865,
+          13.1382514
+        ]
+      },
+      "properties": {
+        "name": "Batbat High School",
+        "address": "Guinobatan",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Guinobatan East District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "guinobatan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.518119,
+          13.1393615
+        ]
+      },
+      "properties": {
+        "name": "Batbat Elementary School",
+        "address": "Guinobatan",
+        "barangay": "Batbat",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Guinobatan East District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "guinobatan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5995194,
+          13.1768968
+        ]
+      },
+      "properties": {
+        "name": "Libas Elementary School",
+        "address": "Guinobatan",
+        "barangay": "Maguiron",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Guinobatan West District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "guinobatan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5819227,
+          13.1839271
+        ]
+      },
+      "properties": {
+        "name": "Malabnig Elementary School",
+        "address": "Guinobatan",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Guinobatan East District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "guinobatan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5444717,
+          13.1276007
+        ]
+      },
+      "properties": {
+        "name": "Manases Olaybal Memorial Elementary School",
+        "address": "Guinobatan",
+        "barangay": "Sinungtan",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Guinobatan East District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "guinobatan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5372478,
+          13.1477171
+        ]
+      },
+      "properties": {
+        "name": "Bololo Elementary School",
+        "address": "Guinobatan",
+        "barangay": "Bololo",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Guinobatan East District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "guinobatan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5515474,
+          13.0971683
+        ]
+      },
+      "properties": {
+        "name": "Palanas Elementary School",
+        "address": "Guinobatan",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Guinobatan West District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "guinobatan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5065567,
+          13.1075062
+        ]
+      },
+      "properties": {
+        "name": "Cabaloaon Elementary School",
+        "address": "Guinobatan",
+        "barangay": "Cabaloaon",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Guinobatan West District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "guinobatan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5706742,
+          13.1247046
+        ]
+      },
+      "properties": {
+        "name": "Malobago Elementary School",
+        "address": "Guinobatan",
+        "barangay": "Purok 2",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Guinobatan West District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "guinobatan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.593084,
+          13.0955388
+        ]
+      },
+      "properties": {
+        "name": "Cabraran Peque\u00f1o Elementary School",
+        "address": "Camalig",
+        "barangay": "Purok 2",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Camalig North District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "camalig"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5926871,
+          13.1067343
+        ]
+      },
+      "properties": {
+        "name": "Pariaan Elementary School",
+        "address": "General Simeon A. Ola Road, Camalig",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Camalig North District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "camalig"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5684359,
+          13.1015481
+        ]
+      },
+      "properties": {
+        "name": "Kinuartilan Elementary School",
+        "address": "Camalig",
+        "barangay": "Kinuartilan",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Camalig North District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "camalig"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7851141,
+          13.0091378
+        ]
+      },
+      "properties": {
+        "name": "Cagbacong High School",
+        "address": "Legazpi",
+        "barangay": "Cagbacong",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Albay II District Legaspi City Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7045842,
+          13.0735906
+        ]
+      },
+      "properties": {
+        "name": "Anislag National High School",
+        "address": "Daraga",
+        "barangay": "Anislag",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6946094,
+          13.0679615
+        ]
+      },
+      "properties": {
+        "name": "Malobago Elementary School",
+        "address": "Daraga",
+        "barangay": "Anislag",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga North District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6630736,
+          13.0349974
+        ]
+      },
+      "properties": {
+        "name": "San Vicente Grande High School",
+        "address": "Daraga",
+        "barangay": "San Vicente Grande",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6051516,
+          13.2368704
+        ]
+      },
+      "properties": {
+        "name": "Muladbucad Elementary School",
+        "address": "Guinobatan",
+        "barangay": "Muladbucad Peque\u00f1o",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Guinobatan East District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "guinobatan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6070764,
+          13.2480555
+        ]
+      },
+      "properties": {
+        "name": "Muladbucad Grande Elementary School",
+        "address": "Guinobatan",
+        "barangay": "Muladbucad Grande",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Guinobatan East District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "guinobatan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5458058,
+          13.175955
+        ]
+      },
+      "properties": {
+        "name": "Catomag Elementary School",
+        "address": "Guinobatan",
+        "barangay": "Catomag",
+        "type": "School",
+        "amenity": "school",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "guinobatan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6451881,
+          13.1162797
+        ]
+      },
+      "properties": {
+        "name": "Solong Elementary School",
+        "address": "Camalig",
+        "barangay": "Purok 2",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Camalig South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "camalig"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7236386,
+          13.1598592
+        ]
+      },
+      "properties": {
+        "name": "Tagas Elementary School",
+        "address": "San Paulino Street, Daraga",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga North District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7547006,
+          13.1529468
+        ]
+      },
+      "properties": {
+        "name": "San Roque Elementary School",
+        "address": "Legazpi",
+        "barangay": "San Roque",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Legazpi Port II District Legaspi City Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7516347,
+          13.1713558
+        ]
+      },
+      "properties": {
+        "name": "Genecom Institute of Science and Technology Inc,",
+        "address": "Tabaco-Legazpi National Road, Legazpi",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7456014,
+          13.1209107
+        ]
+      },
+      "properties": {
+        "name": "Taysan Resettlement Integrated School",
+        "address": "Legazpi",
+        "barangay": "Rawis",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Albay II District Legaspi City Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "legazpi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6700621,
+          13.0642044
+        ]
+      },
+      "properties": {
+        "name": "Magogon Elementary School",
+        "address": "Camalig",
+        "barangay": "",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Camalig South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "camalig"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6648022,
+          13.0544588
+        ]
+      },
+      "properties": {
+        "name": "Canarom Elementary School",
+        "address": "Daraga",
+        "barangay": "Canaro",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Daraga South District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "daraga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5811448,
+          13.1097125
+        ]
+      },
+      "properties": {
+        "name": "Manawan Elementary School",
+        "address": "Camalig",
+        "barangay": "Daraga",
+        "type": "School",
+        "amenity": "school",
+        "operator": "Camalig North District of Albay Schools Division, DepEd",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "camalig"
+      }
+    }
+  ]
+}

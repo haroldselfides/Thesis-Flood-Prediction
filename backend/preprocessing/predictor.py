@@ -7,16 +7,36 @@ import logging
 import pandas as pd
 from xgboost import XGBClassifier
 
-from preprocessing.startup import MODEL_FEATURE_COLUMNS
 from ecmwf.ecmwf import RainfallForecast, validate_rainfall_units
 
 logger = logging.getLogger(__name__)
 
-# Dynamic rainfall features (broadcast across all 71 rows)
-RAIN_FEATURES = ["rain_1hr", "rain_3hr", "rain_6hr"]
+# Maps startup.py column names → model training column names
+STATIC_COLUMN_MAP = {
+    "log_elevation":           "elev_1",
+    "log_slope":               "slope_1",
+    "log_flow_accumulation":   "log_flowacc",
+    "geology_majority":        "geol_1",
+    "lulc_built_up":           "lulc_1",
+    "log_distance_from_river": "distriver_1",
+    "log_twi":                 "twi_1",
+    "tc_cluster":              "cluster_id",
+}
 
-# Full feature list: 16 static + 3 dynamic = 19
-ALL_FEATURES = MODEL_FEATURE_COLUMNS + RAIN_FEATURES
+# Final 11 features in exact order the model expects
+MODEL_EXPECTED_FEATURES = [
+    "elev_1",
+    "slope_1",
+    "log_flowacc",
+    "geol_1",
+    "lulc_1",
+    "distriver_1",
+    "twi_1",
+    "rain_1h",
+    "rain_3h",
+    "rain_6h",
+    "cluster_id",
+]
 
 
 def build_feature_matrix(
@@ -24,8 +44,8 @@ def build_feature_matrix(
     forecast: RainfallForecast,
 ) -> pd.DataFrame:
     """
-    Broadcast the three scalar rainfall values across all 71 barangay rows.
-    Returns a (71 x 19) DataFrame with columns in ALL_FEATURES order.
+    Remap startup.py column names to model training names, broadcast
+    rainfall values, and return a (71 x 11) DataFrame ready for inference.
 
     Parameters
     ----------
@@ -36,12 +56,24 @@ def build_feature_matrix(
     validate_rainfall_units(forecast.rain_3hr, "rain_3hr")
     validate_rainfall_units(forecast.rain_6hr, "rain_6hr")
 
-    X = static_df[MODEL_FEATURE_COLUMNS].copy()
-    X["rain_1hr"] = forecast.rain_1hr
-    X["rain_3hr"] = forecast.rain_3hr
-    X["rain_6hr"] = forecast.rain_6hr
+    # Select and rename static columns to match model training names
+    static_cols = list(STATIC_COLUMN_MAP.keys())
+    missing = [c for c in static_cols if c not in static_df.columns]
+    if missing:
+        raise ValueError(
+            f"static_df is missing expected columns: {missing}\n"
+            f"Available columns: {static_df.columns.tolist()}"
+        )
 
-    return X[ALL_FEATURES]
+    X = static_df[static_cols].copy().rename(columns=STATIC_COLUMN_MAP)
+
+    # Add rainfall features (column names must match training exactly)
+    X["rain_1h"] = forecast.rain_1hr
+    X["rain_3h"] = forecast.rain_3hr
+    X["rain_6h"] = forecast.rain_6hr
+
+    # Reorder to exact model feature order
+    return X[MODEL_EXPECTED_FEATURES]
 
 
 def run_prediction(
@@ -56,7 +88,8 @@ def run_prediction(
     Returns a dict ready to be serialised as JSON.
     """
     X = build_feature_matrix(static_df, forecast)
-    logger.info(f"Feature matrix shape: {X.shape}")
+    logger.info(f"Feature matrix shape: {X.shape}")  # should be (71, 11)
+    logger.info(f"Feature columns: {X.columns.tolist()}")
 
     # predict_proba[:, 1] = P(flood = 1)
     proba = model.predict_proba(X.values)[:, 1]

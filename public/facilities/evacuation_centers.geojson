@@ -1,0 +1,47 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5971842,
+          13.1913767
+        ]
+      },
+      "properties": {
+        "name": "BUCAF Student Center",
+        "address": "Guinobatan",
+        "barangay": "",
+        "type": "Evacuation Center",
+        "amenity": "community_centre",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": "guinobatan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.682477,
+          13.1013079
+        ]
+      },
+      "properties": {
+        "name": "Burgos Covered Court",
+        "address": "",
+        "barangay": "Burgos",
+        "type": "Evacuation Center",
+        "amenity": "community_centre",
+        "operator": "",
+        "phone": "",
+        "opening_hours": "",
+        "municipality": ""
+      }
+    }
+  ]
+}

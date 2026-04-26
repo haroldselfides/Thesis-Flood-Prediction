@@ -5,7 +5,8 @@ import { SPATIAL_LAYERS, LULC_CLASSES,GEOLOGY_CLASSES, DISTANCE_FROM_RIVER_CLASS
 import { LAYER_DISPLAY_ORDER } from "@/lib/utils";
 import { Eye, EyeOff, Info } from "lucide-react";
 import { useState } from "react";
-import type { SpatialLayerId } from "@/types";
+import type { SpatialLayerId, FacilityLayerId } from "@/types";
+import { FACILITY_LAYERS } from "@/components/map/MapContent";
 
 export default function LayersPanel() {
   const state = useAppState();
@@ -137,6 +138,62 @@ export default function LayersPanel() {
             </div>
           );
         })}
+      </div>
+
+      {/* ================================================================
+          FACILITIES SECTION
+          ================================================================ */}
+      <div className="mt-6">
+        <h3 className="font-display font-semibold text-sm text-brand-900 mb-1">
+          Facilities
+        </h3>
+        <p className="text-xs text-gray-500 mb-3">
+          Toggle emergency and public facilities on the map.
+        </p>
+
+        <div className="space-y-1.5">
+          {(Object.entries(FACILITY_LAYERS) as [FacilityLayerId, typeof FACILITY_LAYERS[FacilityLayerId]][]).map(
+            ([facilityId, config]) => {
+              const isVisible = state.visibleFacilities?.includes(facilityId) ?? false;
+              return (
+                <div
+                  key={facilityId}
+                  className={`rounded-lg border transition-all flex items-center gap-2.5 px-3 py-2.5 ${
+                    isVisible
+                      ? "border-brand-200 bg-brand-50/40"
+                      : "border-surface-3 bg-white"
+                  }`}
+                >
+                  {/* Color dot */}
+                  <div
+                    className="w-3 h-3 rounded-full shrink-0 border border-black/10"
+                    style={{ background: config.color }}
+                  />
+
+                  {/* Icon + label */}
+                  <span className="flex-1 text-xs font-medium text-brand-900 leading-tight flex items-center gap-1.5">
+                    <span>{config.icon}</span>
+                    {config.label}
+                  </span>
+
+                  {/* Visibility toggle */}
+                  <button
+                    onClick={() =>
+                      dispatch({ type: "TOGGLE_FACILITY", payload: facilityId })
+                    }
+                    className={`p-1 rounded transition-colors ${
+                      isVisible
+                        ? "text-brand-600 hover:bg-brand-100"
+                        : "text-gray-300 hover:text-gray-500 hover:bg-gray-100"
+                    }`}
+                  >
+                    {isVisible ? <Eye size={15} /> : <EyeOff size={15} />}
+                  </button>
+                </div>
+              );
+            }
+          )}
+        </div>
       </div>
 
       {/* Drainage proxy note */}

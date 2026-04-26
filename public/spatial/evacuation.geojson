@@ -1,0 +1,219 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-04-25T07:02:30Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/258343736",
+        "addr:city": "Guinobatan",
+        "amenity": "community_centre",
+        "building": "yes",
+        "building:levels": "2",
+        "name": "BUCAF Student Center",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.5971842,
+          13.1913767
+        ]
+      },
+      "id": "way/258343736"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/259715336",
+        "amenity": "community_centre",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7195969,
+          13.3756745
+        ]
+      },
+      "id": "way/259715336"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/330543330",
+        "amenity": "community_centre",
+        "building": "yes",
+        "name": "Day-Care Center",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7318591,
+          13.3205194
+        ]
+      },
+      "id": "way/330543330"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/660336024",
+        "addr:place": "Burgos",
+        "amenity": "community_centre",
+        "building": "roof",
+        "community_centre": "events_place",
+        "layer": "1",
+        "leisure": "sports_hall",
+        "name": "Burgos Covered Court",
+        "sport": "multi",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.682477,
+          13.1013079
+        ]
+      },
+      "id": "way/660336024"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/952184307",
+        "amenity": "community_centre",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7894086,
+          13.2901099
+        ]
+      },
+      "id": "way/952184307"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/968432863",
+        "addr:place": "Mabini",
+        "amenity": "community_centre",
+        "building": "roof",
+        "community_centre": "events_place",
+        "layer": "1",
+        "leisure": "sports_hall",
+        "sport": "multi",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6798615,
+          13.0945537
+        ]
+      },
+      "id": "way/968432863"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1182143030",
+        "addr:place": "Namantao",
+        "amenity": "community_centre",
+        "building": "roof",
+        "community_centre": "events_place",
+        "layer": "1",
+        "leisure": "sports_hall",
+        "sport": "multi",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6971691,
+          13.0904354
+        ]
+      },
+      "id": "way/1182143030"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1340553028",
+        "amenity": "community_centre",
+        "building": "yes",
+        "community_centre:for": "child",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7351078,
+          13.3578907
+        ]
+      },
+      "id": "way/1340553028"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4258098558",
+        "addr:city": "Tabaco City",
+        "addr:postcode": "4511",
+        "amenity": "community_centre",
+        "name": "Holy Face Rehabilitation Center for Mental Health"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.6438975,
+          13.3160473
+        ]
+      },
+      "id": "node/4258098558"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4298141792",
+        "addr:housenumber": "415",
+        "addr:postcode": "4509",
+        "addr:street": "Bes Street",
+        "amenity": "community_centre",
+        "name": "Igang, Bacacay, Albay"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.8095871,
+          13.2892045
+        ]
+      },
+      "id": "node/4298141792"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5204944389",
+        "addr:postcode": "4509",
+        "amenity": "community_centre",
+        "name": "Trinitas Home for Contemplation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.7537252,
+          13.2767707
+        ]
+      },
+      "id": "node/5204944389"
+    }
+  ]
+}

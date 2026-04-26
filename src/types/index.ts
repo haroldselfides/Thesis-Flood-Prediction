@@ -8,6 +8,14 @@
 export type CRS = "EPSG:32651" | "EPSG:4326";
 
 
+/** Facility layer identifiers — matches the 5 GeoJSON facility files */
+export type FacilityLayerId =
+  | "fire_stations"
+  | "hospitals"
+  | "police_stations"
+  | "schools"
+  | "evacuation_centers";
+
 /** Spatial layer identifiers — matches the 7 QGIS layers */
 export type SpatialLayerId =
   | "flow_accumulation"
@@ -160,6 +168,8 @@ export interface AppState {
   predictionWindow: PredictionWindow;
   /** Which spatial layers are visible */
   visibleLayers: SpatialLayerId[];
+  /** Which facility layers are visible */
+  visibleFacilities: FacilityLayerId[];
   /** Current map view */
   mapView: MapViewState;
   /** Sidebar state */
@@ -189,4 +199,3 @@ export interface ApiResponse<T> {
   error?: ApiError;
   timestamp: string;
 }
-

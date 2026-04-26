@@ -81,6 +81,42 @@ export const DISTANCE_FROM_RIVER_CLASSES: Record<number, { label: string; color:
   4: { label: "3,292.8 – 4,116.0 m",color: "#c7d0e5" }, // very light blue (farthest)
 };
 
+// lib/constants.ts (or top of MapContent.tsx)
+export const FACILITY_LAYERS = {
+  fire_stations: {
+    file: "/facilities/fire_stations.geojson",
+    color: "#ef4444",   // red
+    icon: "🔥",
+    label: "Fire Stations",
+  },
+  hospitals: {
+    file: "/facilities/hospitals.geojson",
+    color: "#3b82f6",   // blue
+    icon: "🏥",
+    label: "Hospitals",
+  },
+  police_stations: {
+    file: "/facilities/police_stations.geojson",
+    color: "#1d4ed8",   // dark blue
+    icon: "🚔",
+    label: "Police Stations",
+  },
+  schools: {
+    file: "/facilities/schools.geojson",
+    color: "#f59e0b",   // amber
+    icon: "🏫",
+    label: "Schools",
+  },
+  evacuation_centers: {
+    file: "/facilities/evacuation_centers.geojson",
+    color: "#22c55e",   // green
+    icon: "🏠",
+    label: "Evacuation Centers",
+  },
+} as const;
+
+export type FacilityLayerId = keyof typeof FACILITY_LAYERS;
+
 // =============================================================================
 // FLOW DIRECTION CLASSES
 // Colors derived from guicadale_flow_direction_map.tif (RdYlGn-style palette)
