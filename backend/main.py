@@ -85,6 +85,8 @@ async def predict(
         forecast=forecast,
     )
 
+    result["stale_forecast"] = forecast.is_fallback
+    result["simulated"] = False
     result["elapsed_ms"] = round((time.perf_counter() - t0) * 1000, 1)
     if window in ("1hr", "3hr", "6hr"):
         result["active_window"] = window
@@ -119,6 +121,54 @@ async def predict_window(request: Request, hours: int):
     )
     result["active_window"] = f"{hours}hr"
     result["elapsed_ms"] = round((time.perf_counter() - t0) * 1000, 1)
+    return result
+
+
+# ── /predict/simulate ────────────────────────────────────────────────────────
+@app.get("/predict/simulate", summary="Simulate flood probability with manual rainfall inputs")
+async def predict_simulate(
+    request: Request,
+    rain_1hr: float = Query(default=0.0, ge=0, description="1-hour rainfall in mm"),
+    rain_3hr: float = Query(default=0.0, ge=0, description="3-hour rainfall in mm"),
+    rain_6hr: float = Query(default=0.0, ge=0, description="6-hour rainfall in mm"),
+    window: Optional[str] = Query(
+        default="3hr",
+        description="Active rainfall window: '1hr', '3hr', or '6hr'.",
+    ),
+):
+    """
+    Proxied by `src/app/api/predict/simulate/route.ts` on the Next.js side.
+
+    Bypasses ECMWF entirely — accepts manually specified rainfall values
+    and runs XGBoost inference directly.  Useful for what-if scenario
+    analysis and thesis demonstrations.
+
+    Returns same shape as /predict, plus `simulated: true`.
+    """
+    from datetime import datetime, timezone
+
+    t0 = time.perf_counter()
+
+    forecast = RainfallForecast(
+        rain_1hr=rain_1hr,
+        rain_3hr=rain_3hr,
+        rain_6hr=rain_6hr,
+        forecast_time=datetime.now(timezone.utc).isoformat(),
+        is_fallback=False,
+    )
+
+    result = run_prediction(
+        model=request.app.state.model,
+        static_df=request.app.state.static_df,
+        forecast=forecast,
+    )
+
+    result["simulated"] = True
+    result["stale_forecast"] = False
+    result["elapsed_ms"] = round((time.perf_counter() - t0) * 1000, 1)
+    if window in ("1hr", "3hr", "6hr"):
+        result["active_window"] = window
+
     return result
 
 

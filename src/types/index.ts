@@ -147,6 +147,15 @@ export interface PredictionResponse {
   /** System limitations disclosure (PAGASA recommendation) */
   limitations: string[];
 
+  // ── Raw FastAPI fields (kept for map rendering and export) ──────────────
+  /** Ordered list of barangay names parallel to flood_probability */
+  barangays?: string[];
+  /** Per-barangay flood probability in [0, 1], parallel to barangays */
+  flood_probability?: number[];
+  /** True when the prediction used manually supplied rainfall (no ECMWF) */
+  simulated?: boolean;
+  /** True when ECMWF was unreachable and a cached/fallback forecast was used */
+  stale_forecast?: boolean;
 }
 
 // =============================================================================
