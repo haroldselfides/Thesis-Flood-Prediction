@@ -7,10 +7,11 @@ const FASTAPI_URL = process.env.FASTAPI_URL || "http://localhost:8000";
  * Proxies to FastAPI GET /predict/simulate
  *
  * Query params:
- *   rain_1hr  – 1-hour rainfall in mm  (default 0)
- *   rain_3hr  – 3-hour rainfall in mm  (default 0)
- *   rain_6hr  – 6-hour rainfall in mm  (default 0)
- *   window    – active window: "1hr" | "3hr" | "6hr"  (default "3hr")
+ *   rain_1hr       – 1-hour rainfall in mm  (default 0)
+ *   rain_3hr       – 3-hour rainfall in mm  (default 0)
+ *   rain_6hr       – 6-hour rainfall in mm  (default 0)
+ *   rain_72h_prior – antecedent 72-hour rainfall in mm (default 0)
+ *   window         – active window: "1hr" | "3hr" | "6hr"  (default "3hr")
  *
  * Bypasses ECMWF entirely — uses manually specified rainfall values.
  * Returns same shape as /api/predict plus `simulated: true`.
@@ -19,12 +20,13 @@ export async function GET(request: NextRequest) {
   try {
     const { searchParams } = request.nextUrl;
 
-    const rain_1hr = searchParams.get("rain_1hr") ?? "0";
-    const rain_3hr = searchParams.get("rain_3hr") ?? "0";
-    const rain_6hr = searchParams.get("rain_6hr") ?? "0";
-    const window = searchParams.get("window") ?? "3hr";
+    const rain_1hr       = searchParams.get("rain_1hr")       ?? "0";
+    const rain_3hr       = searchParams.get("rain_3hr")       ?? "0";
+    const rain_6hr       = searchParams.get("rain_6hr")       ?? "0";
+    const rain_72h_prior = searchParams.get("rain_72h_prior") ?? "0";
+    const window         = searchParams.get("window")         ?? "3hr";
 
-    const params = new URLSearchParams({ rain_1hr, rain_3hr, rain_6hr, window });
+    const params = new URLSearchParams({ rain_1hr, rain_3hr, rain_6hr, rain_72h_prior, window });
 
     const res = await fetch(`${FASTAPI_URL}/predict/simulate?${params}`, {
       cache: "no-store",

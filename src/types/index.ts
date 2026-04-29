@@ -3,10 +3,8 @@
 // These types correspond to the 7 QGIS layers + basemap
 // =============================================================================
 
-
 /** CRS: EPSG:32651 (PRS92 / WGS84 UTM Zone 51N) */
 export type CRS = "EPSG:32651" | "EPSG:4326";
-
 
 /** Facility layer identifiers — matches the 5 GeoJSON facility files */
 export type FacilityLayerId =
@@ -36,7 +34,7 @@ export interface SpatialLayer {
   filePath: string;
   valueRange: [number, number];
   colorRamp: string[];
-  colorScale?: "linear" | "logarithmic"; 
+  colorScale?: "linear" | "logarithmic";
   categorical: boolean;
   visible: boolean;
   opacity: number;
@@ -46,11 +44,8 @@ export interface SpatialLayer {
 export interface Barangay {
   id: string;
   name: string;
-  /** GeoJSON geometry */
   geometry: GeoJSON.Geometry;
-  /** Centroid for label placement */
   centroid: [number, number];
-  /** Area in sq meters */
   area: number;
 }
 
@@ -64,7 +59,6 @@ export interface HazardClassification {
   level: HazardLevel;
   label: string;
   color: string;
-  /** Probability range [min, max) */
   range: [number, number];
   description: string;
 }
@@ -74,13 +68,9 @@ export interface BarangayHazard {
   barangayId: string;
   barangayName: string;
   hazardLevel: HazardLevel;
-  /** Flood probability 0-1 */
   floodProbability: number;
-  /** Predicted rainfall (mm) for the window */
   predictedRainfall: number;
-  /** Predicted water level (m) if available */
   predictedWaterLevel?: number;
-  /** Contributing factors ranked by importance */
   contributingFactors: {
     factor: SpatialLayerId;
     normalizedValue: number;
@@ -92,45 +82,41 @@ export interface BarangayHazard {
 // PREDICTION TYPES
 // =============================================================================
 
-/** Prediction time windows aligned with PAGASA recommendations */
 export type PredictionWindow = "1h" | "3h" | "6h";
 
-/** ECMWF forecast rainfall input */
 export interface RainfallForecast {
   timestamp: string;
-  /** Rainfall in mm */
   value: number;
   source: "ecmwf" | "gpm_imerg" | "pagasa_ground";
 }
 
-/** Torque Cluster assignment */
 export interface RainfallCluster {
   clusterId: number;
   label: string;
-  /** e.g., "Dry", "Light Rain", "Moderate", "Heavy", "Extreme" */
   regime: string;
-  /** Representative centroid values */
   centroid: number[];
 }
 
-/** XGBoost prediction request */
 export interface PredictionRequest {
   window: PredictionWindow;
-  /** Recent rainfall observations (hourly, last 24h) */
   recentRainfall: number[];
-  /** ECMWF forecast values for the window */
   forecastRainfall: number[];
-  /** Torque cluster ID from clustering step */
   clusterId?: number;
+}
+
+/** Per-point entry in barangay_results (averaged per barangay by backend) */
+export interface BarangayResult {
+  barangay: string;
+  flood_probability: number;
+  flood_label: "Low" | "Moderate" | "High" | "Critical";
+  point_count: number;
 }
 
 /** XGBoost prediction response */
 export interface PredictionResponse {
   window: PredictionWindow;
   timestamp: string;
-  /** Per-barangay hazard results */
   barangayHazards: BarangayHazard[];
-  /** City-wide summary */
   citySummary: {
     overallHazardLevel: HazardLevel;
     totalPredictedRainfall: number;
@@ -138,23 +124,40 @@ export interface PredictionResponse {
     affectedBarangays: number;
     totalBarangays: number;
   };
-  /** Model metadata */
   modelInfo: {
     version: string;
     accuracy: number;
     lastTrained: string;
   };
-  /** System limitations disclosure (PAGASA recommendation) */
   limitations: string[];
 
-  // ── Raw FastAPI fields (kept for map rendering and export) ──────────────
-  /** Ordered list of barangay names parallel to flood_probability */
-  barangays?: string[];
-  /** Per-barangay flood probability in [0, 1], parallel to barangays */
-  flood_probability?: number[];
-  /** True when the prediction used manually supplied rainfall (no ECMWF) */
+  // ── Per-point pipeline fields ─────────────────────────────────────────────
+  points_geojson?: {
+    type: "FeatureCollection";
+    features: Array<{
+      type: "Feature";
+      geometry: { type: "Point"; coordinates: [number, number] };
+      properties: {
+        point_id: number;
+        flood_probability: number;
+        flood_label: string;
+      };
+    }>;
+  };
+  barangay_results?: BarangayResult[];
+  metadata?: {
+    rain_1hr_mm: number;
+    rain_3hr_mm: number;
+    rain_6hr_mm: number;
+    rain_72h_prior: number;
+    tc_regime: string;
+    is_fallback: boolean;
+    point_count: number;
+    dry_run: boolean;
+    scale_factor: number;
+    simulated?: boolean;
+  };
   simulated?: boolean;
-  /** True when ECMWF was unreachable and a cached/fallback forecast was used */
   stale_forecast?: boolean;
 }
 
@@ -173,21 +176,13 @@ export interface SidebarState {
 }
 
 export interface AppState {
-  /** Currently active prediction window */
   predictionWindow: PredictionWindow;
-  /** Which spatial layers are visible */
   visibleLayers: SpatialLayerId[];
-  /** Which facility layers are visible */
   visibleFacilities: FacilityLayerId[];
-  /** Current map view */
   mapView: MapViewState;
-  /** Sidebar state */
   sidebar: SidebarState;
-  /** Selected barangay (clicked on map) */
   selectedBarangay: string | null;
-  /** Latest prediction results */
   prediction: PredictionResponse | null;
-  /** Loading states */
   isLoading: boolean;
   isPredicting: boolean;
 }

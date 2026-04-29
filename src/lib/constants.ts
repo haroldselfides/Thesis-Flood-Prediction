@@ -254,40 +254,42 @@ flow_accumulation: {
 // HAZARD CLASSIFICATION
 // =============================================================================
 
+// Ranges match backend THRESHOLDS in predictor.py:
+//   very_low  < 0.20 | low < 0.40 | moderate < 0.55 | high < 0.70 | very_high >= 0.70
 export const HAZARD_CLASSIFICATIONS: HazardClassification[] = [
   {
     level: "very_low",
     label: "Very Low",
     color: "#2ecc71",
-    range: [0, 0.2],
+    range: [0, 0.20],
     description: "Minimal flood risk.",
   },
   {
     level: "low",
     label: "Low",
     color: "#f1c40f",
-    range: [0.2, 0.4],
+    range: [0.20, 0.40],
     description: "Low flood risk.",
   },
   {
     level: "moderate",
     label: "Moderate",
     color: "#e67e22",
-    range: [0.4, 0.6],
+    range: [0.40, 0.55],
     description: "Moderate flood risk.",
   },
   {
     level: "high",
     label: "High",
     color: "#e74c3c",
-    range: [0.6, 0.8],
+    range: [0.55, 0.70],
     description: "High flood risk.",
   },
   {
     level: "very_high",
     label: "Very High",
     color: "#8e44ad",
-    range: [0.8, 1.0],
+    range: [0.70, 1.0],
     description: "Very high flood risk.",
   },
 ];

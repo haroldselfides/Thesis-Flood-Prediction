@@ -82,7 +82,7 @@ export default function ResultsPanel() {
         </div>
 
         <div className="grid grid-cols-2 gap-3">
-          <div className="bg-white rounded-lg p-2.5 border border-surface-3">
+          <div className="bg-white rounded-lg p-2.5 border border-surface-3 col-span-2">
             <div className="flex items-center gap-1 text-[10px] text-gray-400 mb-0.5">
               <Droplets size={10} /> Predicted Rainfall
             </div>
@@ -90,7 +90,7 @@ export default function ResultsPanel() {
               {formatRainfall(citySummary.totalPredictedRainfall)}
             </div>
           </div>
-          <div className="bg-white rounded-lg p-2.5 border border-surface-3">
+          {/* <div className="bg-white rounded-lg p-2.5 border border-surface-3">
             <div className="flex items-center gap-1 text-[10px] text-gray-400 mb-0.5">
               <Waves size={10} /> Predicted Water Level
             </div>
@@ -99,7 +99,7 @@ export default function ResultsPanel() {
                 ? formatWaterLevel(citySummary.predictedWaterLevel)
                 : "—"}
             </div>
-          </div>
+          </div> */}
           <div className="bg-white rounded-lg p-2.5 border border-surface-3 col-span-2">
             <div className="flex items-center gap-1 text-[10px] text-gray-400 mb-0.5">
               <MapPin size={10} /> Affected Barangays

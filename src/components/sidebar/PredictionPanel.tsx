@@ -14,14 +14,14 @@ import {
   Radio,
 } from "lucide-react";
 
-// Rainfall scenario presets for simulation mode
+// TC-cluster-inspired scenario presets
 const SCENARIOS = [
-  { label: "No Rain",   rain_1hr: 0,   rain_3hr: 0,   rain_6hr: 0   },
-  { label: "Light",     rain_1hr: 2,   rain_3hr: 6,   rain_6hr: 12  },
-  { label: "Moderate",  rain_1hr: 8,   rain_3hr: 24,  rain_6hr: 48  },
-  { label: "Heavy",     rain_1hr: 20,  rain_3hr: 60,  rain_6hr: 120 },
-  { label: "Typhoon",   rain_1hr: 40,  rain_3hr: 120, rain_6hr: 240 },
-  { label: "Extreme",   rain_1hr: 80,  rain_3hr: 240, rain_6hr: 480 },
+  { label: "No Rain",      rain_1hr: 0,  rain_3hr: 0,   rain_6hr: 0,   rain_72h_prior: 0   },
+  { label: "Light (C0)",   rain_1hr: 3,  rain_3hr: 9,   rain_6hr: 18,  rain_72h_prior: 0   },
+  { label: "Monsoon (C1)", rain_1hr: 10, rain_3hr: 30,  rain_6hr: 60,  rain_72h_prior: 20  },
+  { label: "Typhoon (C2)", rain_1hr: 25, rain_3hr: 75,  rain_6hr: 150, rain_72h_prior: 10  },
+  { label: "Extreme (C2)", rain_1hr: 40, rain_3hr: 120, rain_6hr: 240, rain_72h_prior: 5   },
+  { label: "Saturated (C3)", rain_1hr: 10, rain_3hr: 30, rain_6hr: 60, rain_72h_prior: 150 },
 ];
 
 type InputMode = "live" | "simulate";
@@ -30,7 +30,8 @@ export default function PredictionPanel() {
   const state = useAppState();
   const dispatch = useAppDispatch();
 
-  const [inputMode, setInputMode] = useState<InputMode>("live");
+  // Default to simulate so demo works without ECMWF
+  const [inputMode, setInputMode] = useState<InputMode>("simulate");
 
   // Live ECMWF state
   const [ecmwfStatus, setEcmwfStatus] = useState<
@@ -48,6 +49,7 @@ export default function PredictionPanel() {
   const [simRain1hr, setSimRain1hr] = useState(0);
   const [simRain3hr, setSimRain3hr] = useState(0);
   const [simRain6hr, setSimRain6hr] = useState(0);
+  const [simRain72h, setSimRain72h] = useState(0);
 
   // ── Fetch ECMWF forecast ──────────────────────────────────────────────────
   const handleFetchECMWF = async () => {
@@ -69,35 +71,38 @@ export default function PredictionPanel() {
     setSimRain1hr(s.rain_1hr);
     setSimRain3hr(s.rain_3hr);
     setSimRain6hr(s.rain_6hr);
+    setSimRain72h(s.rain_72h_prior);
   };
 
-  // ── Transform raw FastAPI response → ResultsPanel format ─────────────────
+  // ── Transform raw FastAPI response → app PredictionResponse ──────────────
   const transformResult = (raw: Record<string, unknown>, windowKey: string) => {
+    const meta = raw.metadata as Record<string, unknown> | undefined;
+
+    const rain1h  = (meta?.rain_1hr_mm  as number) ?? 0;
+    const rain3h  = (meta?.rain_3hr_mm  as number) ?? 0;
+    const rain6h  = (meta?.rain_6hr_mm  as number) ?? 0;
+    const rain72h = (meta?.rain_72h_prior as number) ?? 0;
+
     const windowMap: Record<string, string> = { "1h": "1hr", "3h": "3hr", "6h": "6hr" };
     const windowApi = windowMap[windowKey] ?? "3hr";
-
     const rainfallMm =
-      windowApi === "1hr"
-        ? (raw.rain_1hr_mm as number) ?? 0
-        : windowApi === "6hr"
-        ? (raw.rain_6hr_mm as number) ?? 0
-        : (raw.rain_3hr_mm as number) ?? 0;
+      windowApi === "1hr" ? rain1h
+      : windowApi === "6hr" ? rain6h
+      : rain3h;
 
-    const barangays = raw.barangays as string[];
-    const probs = raw.flood_probability as number[];
-    const nBarangays = raw.n_barangays as number;
-
-    const barangayHazards = barangays.map((name, i) => {
-      const prob = probs[i] ?? 0;
+    // Build barangayHazards from barangay_results if present
+    const bgyResults = (raw.barangay_results as Array<Record<string, unknown>>) ?? [];
+    const barangayHazards = bgyResults.map((b, i) => {
+      const prob = (b.flood_probability as number) ?? 0;
       const level =
         prob >= 0.75 ? "very_high"
-        : prob >= 0.5 ? "high"
+        : prob >= 0.5  ? "high"
         : prob >= 0.25 ? "moderate"
-        : prob >= 0.1 ? "low"
+        : prob >= 0.1  ? "low"
         : "very_low";
       return {
         barangayId: `brgy_${String(i).padStart(3, "0")}`,
-        barangayName: name,
+        barangayName: (b.barangay as string) ?? `Barangay ${i}`,
         hazardLevel: level as "very_high" | "high" | "moderate" | "low" | "very_low",
         floodProbability: prob,
         predictedRainfall: rainfallMm,
@@ -105,28 +110,31 @@ export default function PredictionPanel() {
       };
     });
 
+    const totalBgy = bgyResults.length || 71;
     const affectedCount = barangayHazards.filter((b) => b.floodProbability >= 0.5).length;
     const overallLevel =
-      affectedCount > nBarangays * 0.5 ? "high"
-      : affectedCount > nBarangays * 0.25 ? "moderate"
+      affectedCount > totalBgy * 0.5 ? "high"
+      : affectedCount > totalBgy * 0.25 ? "moderate"
       : "low";
 
     return {
       window: windowKey,
-      timestamp: raw.forecast_time as string,
+      timestamp: new Date().toISOString(),
       barangayHazards,
       citySummary: {
         overallHazardLevel: overallLevel as "very_high" | "high" | "moderate" | "low" | "very_low",
         totalPredictedRainfall: rainfallMm,
         affectedBarangays: affectedCount,
-        totalBarangays: nBarangays,
+        totalBarangays: totalBgy,
       },
-      modelInfo: { version: "1.0.0", accuracy: 0.84, lastTrained: "2025-12-01" },
+      modelInfo: { version: "2.0.0", accuracy: 0.89, lastTrained: "2025-12-01" },
       limitations: [],
-      barangays: raw.barangays,
-      flood_probability: raw.flood_probability,
-      simulated: raw.simulated as boolean,
-      stale_forecast: raw.stale_forecast as boolean,
+      // Pass through raw per-point data for map rendering
+      points_geojson: raw.points_geojson,
+      barangay_results: raw.barangay_results,
+      metadata: raw.metadata,
+      simulated: (raw.metadata as Record<string, unknown>)?.simulated as boolean,
+      stale_forecast: false,
     };
   };
 
@@ -140,9 +148,10 @@ export default function PredictionPanel() {
       let res: Response;
       if (inputMode === "simulate") {
         const params = new URLSearchParams({
-          rain_1hr: String(simRain1hr),
-          rain_3hr: String(simRain3hr),
-          rain_6hr: String(simRain6hr),
+          rain_1hr:       String(simRain1hr),
+          rain_3hr:       String(simRain3hr),
+          rain_6hr:       String(simRain6hr),
+          rain_72h_prior: String(simRain72h),
           window,
         });
         res = await fetch(`/api/predict/simulate?${params}`, { cache: "no-store" });
@@ -157,7 +166,7 @@ export default function PredictionPanel() {
 
       const raw = await res.json();
       const transformed = transformResult(raw, state.predictionWindow);
-      dispatch({ type: "SET_PREDICTION", payload: transformed });
+      dispatch({ type: "SET_PREDICTION", payload: transformed as any });
       dispatch({ type: "SET_SIDEBAR_TAB", payload: "results" });
     } catch (error) {
       console.error("Prediction failed:", error);
@@ -194,7 +203,7 @@ export default function PredictionPanel() {
       />
       <div className="flex justify-between text-[9px] text-gray-300 mt-0.5">
         <span>0</span>
-        <span>{max / 2}</span>
+        <span>{Math.round(max / 2)}</span>
         <span>{max} mm</span>
       </div>
     </div>
@@ -207,7 +216,7 @@ export default function PredictionPanel() {
       </h3>
       <p className="text-xs text-gray-500 mb-5">
         Select a prediction window and generate the dynamic flood hazard map
-        using Torque Clustering + XGBoost.
+        using XGBoost on 55,000+ terrain points.
       </p>
 
       {/* Prediction Window */}
@@ -365,7 +374,9 @@ export default function PredictionPanel() {
                 key={s.label}
                 onClick={() => applyScenario(s)}
                 className={`py-1.5 px-1 rounded text-[10px] font-medium text-center border transition-all ${
-                  simRain3hr === s.rain_3hr && simRain1hr === s.rain_1hr
+                  simRain3hr === s.rain_3hr &&
+                  simRain1hr === s.rain_1hr &&
+                  simRain72h === s.rain_72h_prior
                     ? "bg-amber-500 text-white border-amber-500"
                     : "bg-white text-gray-600 border-surface-3 hover:border-amber-300 hover:bg-amber-50"
                 }`}
@@ -380,17 +391,25 @@ export default function PredictionPanel() {
             label="1-hour rainfall (mm)"
             value={simRain1hr}
             onChange={setSimRain1hr}
+            max={100}
           />
           <RainfallSlider
             label="3-hour rainfall (mm)"
             value={simRain3hr}
             onChange={setSimRain3hr}
+            max={300}
           />
           <RainfallSlider
             label="6-hour rainfall (mm)"
             value={simRain6hr}
             onChange={setSimRain6hr}
             max={600}
+          />
+          <RainfallSlider
+            label="Prior 72-hour rainfall (mm)"
+            value={simRain72h}
+            onChange={setSimRain72h}
+            max={300}
           />
         </div>
       )}
@@ -402,16 +421,16 @@ export default function PredictionPanel() {
       </label>
       <div className="bg-surface-1 rounded-lg p-3 border border-surface-3 mb-5 space-y-2">
         <div className="flex items-center justify-between text-xs">
-          <span className="text-gray-500">Flood probability per barangay</span>
-          <span className="text-brand-600 font-medium">0–100%</span>
+          <span className="text-gray-500">Inference points</span>
+          <span className="text-brand-600 font-medium">~55,000</span>
         </div>
         <div className="flex items-center justify-between text-xs">
           <span className="text-gray-500">Barangays assessed</span>
-          <span className="text-brand-600 font-medium">71</span>
+          <span className="text-brand-600 font-medium">203</span>
         </div>
         <div className="flex items-center justify-between text-xs">
           <span className="text-gray-500">Hazard classification</span>
-          <span className="text-brand-600 font-medium">5 levels</span>
+          <span className="text-brand-600 font-medium">4 levels</span>
         </div>
       </div>
 
@@ -451,7 +470,7 @@ export default function PredictionPanel() {
         <p className={`text-[10px] leading-relaxed ${inputMode === "simulate" ? "text-amber-700" : "text-blue-700"}`}>
           {inputMode === "simulate"
             ? "Simulation uses manually set rainfall values — bypasses ECMWF entirely. Useful for extreme scenario analysis and thesis demonstrations."
-            : "Rainfall input uses live ECMWF open data forecast for Legazpi City. Predictions run on all 71 barangays simultaneously using XGBoost."}
+            : "Rainfall input uses live ECMWF open data forecast for Legazpi City. Predictions run on all 55k terrain points simultaneously using XGBoost."}
         </p>
       </div>
     </div>

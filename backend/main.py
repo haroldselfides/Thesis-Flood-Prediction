@@ -1,191 +1,138 @@
 """
-backend/main.py — Legazpi City Flood Prediction API
-FastAPI + XGBoost + ECMWF Open Data
+main.py — FastAPI entry point for the flood prediction backend.
+
+Startup loads (once):
+  - XGBoost flood model  (flood_model.json)
+  - Static terrain points (inference_points.csv)
+  - Barangay lookup       (spatial join: point_id -> barangay)
+
+Routes:
+  GET  /health
+  GET  /predict           — live forecast from ECMWF
+  POST /predict           — backward-compat alias
+  GET  /predict/simulate  — manual rainfall inputs, bypasses ECMWF
 """
 
-from fastapi import FastAPI, HTTPException, Request, Query
-from fastapi.middleware.cors import CORSMiddleware
+from __future__ import annotations
+
+import logging
 from contextlib import asynccontextmanager
 from typing import Optional
-import time
-import logging
 
-from preprocessing.startup import load_model, load_static_features
-from ecmwf.ecmwf import fetch_rainfall_forecast, RainfallForecast
+import pandas as pd
+import xgboost as xgb
+from fastapi import FastAPI, HTTPException, Query
+from fastapi.middleware.cors import CORSMiddleware
+
+from ecmwf.ecmwf import RainfallForecast, fetch_rainfall
 from preprocessing.predictor import run_prediction
+from preprocessing.startup import build_barangay_lookup, load_single_model, load_static_features
 
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 logger = logging.getLogger(__name__)
 
 
-# ── Lifespan: load heavy assets ONCE at startup ───────────────────────────────
+class AppState:
+    model: xgb.Booster
+    static_df: pd.DataFrame
+    barangay_lookup: Optional[pd.DataFrame]
+
+
+app_state = AppState()
+
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    logger.info("🚀 Loading model and static features...")
-    app.state.model = load_model("model/xgboost_flood_model.json")
-    app.state.static_df = load_static_features(
-        "preprocessing/data/guicadale_barangay_features.gpkg"
-    )
-    logger.info("✅ Startup complete — 71 barangays ready.")
+    logger.info("Loading model and static data ...")
+    app_state.model           = load_single_model()
+    app_state.static_df       = load_static_features()
+    app_state.barangay_lookup = build_barangay_lookup(app_state.static_df)
+    logger.info("Startup complete.")
     yield
-    logger.info("🛑 Shutting down.")
+    logger.info("Shutting down.")
 
 
-# ── App ───────────────────────────────────────────────────────────────────────
-app = FastAPI(
-    title="Legazpi Flood Prediction API",
-    description=(
-        "Real-time flood probability for 71 Legazpi City barangays "
-        "using ECMWF forecasts + XGBoost."
-    ),
-    version="1.0.0",
-    lifespan=lifespan,
-)
+app = FastAPI(title="Flood Prediction API", lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],   # Next.js dev server
-    allow_methods=["GET"],
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
     allow_headers=["*"],
 )
 
 
-# ── Health ────────────────────────────────────────────────────────────────────
+def _window_to_rain(forecast: RainfallForecast, window: str) -> RainfallForecast:
+    if window == "1hr":
+        pass
+    elif window == "3hr":
+        forecast.rain_1hr = round(forecast.rain_3hr / 3.0, 3)
+    elif window == "6hr":
+        forecast.rain_1hr = round(forecast.rain_6hr / 6.0, 3)
+    return forecast
+
+
 @app.get("/health")
-def health():
-    return {"status": "ok"}
+async def health():
+    return {
+        "status": "ok",
+        "model_loaded": app_state.model is not None,
+        "points": len(app_state.static_df) if app_state.static_df is not None else 0,
+        "barangay_lookup": app_state.barangay_lookup is not None,
+    }
 
 
-# ── /predict ──────────────────────────────────────────────────────────────────
-@app.get("/predict", summary="Flood probability for all 71 Legazpi barangays")
-async def predict(
-    request: Request,
-    window: Optional[str] = Query(
-        default="all",
-        description="Rainfall window to highlight: '1hr', '3hr', '6hr', or 'all'.",
-    ),
-):
-    """
-    Proxied by `src/app/api/predict/route.ts` on the Next.js side.
-
-    Returns:
-    - `barangays`: 71 barangay names
-    - `flood_probability`: parallel P(flood) list in [0, 1]
-    - `rain_1hr_mm / rain_3hr_mm / rain_6hr_mm`: ECMWF rainfall in mm
-    - `forecast_time`: ISO-8601 UTC of the ECMWF model run
-    - `high_risk`: barangays with P(flood) >= 0.50, sorted descending
-    - `elapsed_ms`: total server-side processing time
-    """
-    t0 = time.perf_counter()
-
-    forecast: RainfallForecast = await fetch_rainfall_forecast()
-    result = run_prediction(
-        model=request.app.state.model,
-        static_df=request.app.state.static_df,
-        forecast=forecast,
-    )
-
-    result["stale_forecast"] = forecast.is_fallback
-    result["simulated"] = False
-    result["elapsed_ms"] = round((time.perf_counter() - t0) * 1000, 1)
-    if window in ("1hr", "3hr", "6hr"):
-        result["active_window"] = window
-
-    return result
+@app.get("/predict")
+async def predict_get(window: str = Query("3hr", pattern="^(1hr|3hr|6hr)$")):
+    try:
+        forecast = fetch_rainfall()
+        forecast = _window_to_rain(forecast, window)
+        return run_prediction(app_state.model, app_state.static_df, forecast,
+                              barangay_lookup=app_state.barangay_lookup)
+    except Exception as exc:
+        logger.exception("predict_get failed")
+        raise HTTPException(status_code=500, detail=str(exc))
 
 
-# ── /predict/window/{hours} ───────────────────────────────────────────────────
-@app.get(
-    "/predict/window/{hours}",
-    summary="Flood probability for a specific rainfall window",
-)
-async def predict_window(request: Request, hours: int):
-    """
-    Convenience route:
-      GET /predict/window/1
-      GET /predict/window/3
-      GET /predict/window/6
-
-    Proxied by `src/app/api/predict/route.ts`.
-    Confirm with Romi whether separate models per window are needed.
-    """
-    if hours not in (1, 3, 6):
-        raise HTTPException(status_code=400, detail="hours must be 1, 3, or 6")
-
-    t0 = time.perf_counter()
-    forecast: RainfallForecast = await fetch_rainfall_forecast()
-    result = run_prediction(
-        model=request.app.state.model,
-        static_df=request.app.state.static_df,
-        forecast=forecast,
-    )
-    result["active_window"] = f"{hours}hr"
-    result["elapsed_ms"] = round((time.perf_counter() - t0) * 1000, 1)
-    return result
+@app.post("/predict")
+async def predict_post(body: dict = {}):
+    window = body.get("window", "3hr")
+    if window not in ("1hr", "3hr", "6hr"):
+        window = "3hr"
+    try:
+        forecast = fetch_rainfall()
+        forecast = _window_to_rain(forecast, window)
+        return run_prediction(app_state.model, app_state.static_df, forecast,
+                              barangay_lookup=app_state.barangay_lookup)
+    except Exception as exc:
+        logger.exception("predict_post failed")
+        raise HTTPException(status_code=500, detail=str(exc))
 
 
-# ── /predict/simulate ────────────────────────────────────────────────────────
-@app.get("/predict/simulate", summary="Simulate flood probability with manual rainfall inputs")
+@app.get("/predict/simulate")
 async def predict_simulate(
-    request: Request,
-    rain_1hr: float = Query(default=0.0, ge=0, description="1-hour rainfall in mm"),
-    rain_3hr: float = Query(default=0.0, ge=0, description="3-hour rainfall in mm"),
-    rain_6hr: float = Query(default=0.0, ge=0, description="6-hour rainfall in mm"),
-    window: Optional[str] = Query(
-        default="3hr",
-        description="Active rainfall window: '1hr', '3hr', or '6hr'.",
-    ),
+    rain_1hr:       float = Query(0.0),
+    rain_3hr:       float = Query(0.0),
+    rain_6hr:       float = Query(0.0),
+    rain_72h_prior: float = Query(0.0),
+    window:         str   = Query("3hr", pattern="^(1hr|3hr|6hr)$"),
 ):
-    """
-    Proxied by `src/app/api/predict/simulate/route.ts` on the Next.js side.
-
-    Bypasses ECMWF entirely — accepts manually specified rainfall values
-    and runs XGBoost inference directly.  Useful for what-if scenario
-    analysis and thesis demonstrations.
-
-    Returns same shape as /predict, plus `simulated: true`.
-    """
-    from datetime import datetime, timezone
-
-    t0 = time.perf_counter()
+    if rain_1hr == 0.0 and rain_3hr > 0.0:
+        rain_1hr = round(rain_3hr / 3.0, 3)
 
     forecast = RainfallForecast(
         rain_1hr=rain_1hr,
         rain_3hr=rain_3hr,
         rain_6hr=rain_6hr,
-        forecast_time=datetime.now(timezone.utc).isoformat(),
+        rain_72h_prior=rain_72h_prior,
         is_fallback=False,
     )
-
-    result = run_prediction(
-        model=request.app.state.model,
-        static_df=request.app.state.static_df,
-        forecast=forecast,
-    )
-
-    result["simulated"] = True
-    result["stale_forecast"] = False
-    result["elapsed_ms"] = round((time.perf_counter() - t0) * 1000, 1)
-    if window in ("1hr", "3hr", "6hr"):
-        result["active_window"] = window
-
-    return result
-
-
-# ── /ecmwf ────────────────────────────────────────────────────────────────────
-@app.get("/ecmwf", summary="Raw ECMWF forecast values for Legazpi grid cell")
-async def ecmwf_raw():
-    """
-    Proxied by `src/app/api/ecmwf/route.ts`.
-    Returns raw rainfall without running model inference.
-    Used by PredictionPanel to display current ECMWF conditions.
-    """
-    forecast: RainfallForecast = await fetch_rainfall_forecast()
-    return {
-        "forecast_time": forecast.forecast_time,
-        "rain_1hr_mm": forecast.rain_1hr,
-        "rain_3hr_mm": forecast.rain_3hr,
-        "rain_6hr_mm": forecast.rain_6hr,
-        "grid_lat": 13.1,
-        "grid_lon": 123.7,
-    }
+    try:
+        result = run_prediction(app_state.model, app_state.static_df, forecast,
+                                barangay_lookup=app_state.barangay_lookup)
+        result["metadata"]["simulated"] = True
+        return result
+    except Exception as exc:
+        logger.exception("predict_simulate failed")
+        raise HTTPException(status_code=500, detail=str(exc))

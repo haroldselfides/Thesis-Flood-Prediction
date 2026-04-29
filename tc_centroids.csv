@@ -1,0 +1,5 @@
+,event_total_mm,peak_1hr_mm,duration_hours,avg_intensity,peak_ratio,rain_72h_prior
+Cluster 0,40.983,7.078,37.291,2.063,0.198,8.651
+Cluster 1,82.912,11.877,45.648,2.969,0.18,31.089
+Cluster 2,255.042,32.121,71.32,5.504,0.161,25.791
+Cluster 3,58.564,10.026,37.0,2.621,0.196,152.468

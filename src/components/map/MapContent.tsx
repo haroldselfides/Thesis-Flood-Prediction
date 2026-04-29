@@ -178,6 +178,7 @@ export default function MapContent() {
   const [userLocation, setUserLocation] = useState<[number, number] | null>(null);
   const [nearestResults, setNearestResults] = useState<NearestResult[]>([]);
   const [showNearestPanel, setShowNearestPanel] = useState(false);
+  const [visualMode, setVisualMode] = useState<"points" | "barangay">("points");
 
   // Route state
   const [activeRoute, setActiveRoute] = useState<ActiveRoute | null>(null);
@@ -322,14 +323,18 @@ export default function MapContent() {
     const map = mapRef.current;
     if (!map) return;
     const applyHazard = () => {
-      if (map.getLayer("hazard-fill")) map.removeLayer("hazard-fill");
-      if (map.getLayer("hazard-outline")) map.removeLayer("hazard-outline");
-      if (map.getSource("hazard-source")) map.removeSource("hazard-source");
-      if (state.prediction) renderHazardOverlay(map, state.prediction);
+      // Remove all hazard layers (points + barangay)
+      ["hazard-fill", "hazard-outline", "hazard-heat", "hazard-circle"].forEach((id) => {
+        if (map.getLayer(id)) map.removeLayer(id);
+      });
+      ["hazard-source", "hazard-points-source"].forEach((id) => {
+        if (map.getSource(id)) map.removeSource(id);
+      });
+      if (state.prediction) renderHazardOverlay(map, state.prediction, visualMode);
     };
     if (map.isStyleLoaded()) applyHazard();
     else map.once("load", applyHazard);
-  }, [state.prediction]);
+  }, [state.prediction, visualMode]);
 
   // ===========================================================================
   // FACILITY LAYERS
@@ -611,6 +616,33 @@ export default function MapContent() {
           facility={selectedFacility}
           onClose={() => setSelectedFacility(null)}
         />
+      )}
+
+      {/* Visualization mode toggle — shown only after a prediction exists */}
+      {state.prediction && (
+        <div className="absolute bottom-20 right-4 z-[1000] bg-white rounded-xl shadow-lg border border-surface-3 flex overflow-hidden text-xs font-medium">
+          <button
+            onClick={() => setVisualMode("points")}
+            className={`px-3 py-2 transition-all ${
+              visualMode === "points"
+                ? "bg-brand-600 text-white"
+                : "text-gray-500 hover:bg-brand-50 hover:text-brand-700"
+            }`}
+          >
+            Points
+          </button>
+          <div className="w-px bg-surface-3" />
+          <button
+            onClick={() => setVisualMode("barangay")}
+            className={`px-3 py-2 transition-all ${
+              visualMode === "barangay"
+                ? "bg-brand-600 text-white"
+                : "text-gray-500 hover:bg-brand-50 hover:text-brand-700"
+            }`}
+          >
+            Barangay
+          </button>
+        </div>
       )}
     </div>
   );
@@ -1161,55 +1193,108 @@ async function loadSpatialLayer(
 // HAZARD OVERLAY
 // =============================================================================
 
-async function renderHazardOverlay(map: maplibregl.Map, prediction: any) {
+const HAZARD_COLOR_EXPR = ["case",
+  ["==", ["get", "flood_prob"], null], "#cccccc",
+  [">=", ["get", "flood_prob"], 0.70], "#7c3aed",
+  [">=", ["get", "flood_prob"], 0.50], "#dc2626",
+  [">=", ["get", "flood_prob"], 0.25], "#f97316",
+  [">=", ["get", "flood_prob"], 0.10], "#eab308",
+  "#22c55e",
+] as any;
+
+async function renderHazardOverlay(
+  map: maplibregl.Map,
+  prediction: any,
+  visualMode: "points" | "barangay" = "points",
+) {
   try {
+    // ── POINTS MODE ───────────────────────────────────────────────────────────
+    if (visualMode === "points" && prediction.points_geojson) {
+      map.addSource("hazard-points-source", {
+        type: "geojson",
+        data: prediction.points_geojson,
+      });
+
+      // Heatmap layer (visible at lower zooms)
+      map.addLayer({
+        id: "hazard-heat",
+        type: "heatmap",
+        source: "hazard-points-source",
+        maxzoom: 14,
+        paint: {
+          "heatmap-weight": ["interpolate", ["linear"], ["get", "flood_probability"], 0, 0, 1, 1],
+          "heatmap-intensity": ["interpolate", ["linear"], ["zoom"], 10, 0.8, 14, 2],
+          "heatmap-color": ["interpolate", ["linear"], ["heatmap-density"],
+            0, "rgba(34,197,94,0)",
+            0.2, "rgba(234,179,8,0.6)",
+            0.5, "rgba(249,115,22,0.8)",
+            0.8, "rgba(220,38,38,0.9)",
+            1, "rgba(124,58,237,1)",
+          ],
+          "heatmap-radius": ["interpolate", ["linear"], ["zoom"], 10, 6, 14, 12],
+          "heatmap-opacity": 0.85,
+        },
+      });
+
+      // Circle layer (visible at higher zooms)
+      map.addLayer({
+        id: "hazard-circle",
+        type: "circle",
+        source: "hazard-points-source",
+        minzoom: 13,
+        paint: {
+          "circle-radius": ["interpolate", ["linear"], ["zoom"], 13, 3, 16, 6],
+          "circle-color": ["case",
+            [">=", ["get", "flood_probability"], 0.70], "#7c3aed",
+            [">=", ["get", "flood_probability"], 0.50], "#dc2626",
+            [">=", ["get", "flood_probability"], 0.25], "#f97316",
+            [">=", ["get", "flood_probability"], 0.10], "#eab308",
+            "#22c55e",
+          ],
+          "circle-opacity": 0.85,
+          "circle-stroke-width": 0,
+        },
+      });
+      return;
+    }
+
+    // ── BARANGAY MODE (or fallback when no points_geojson) ───────────────────
     const response = await fetch("/spatial/guicadale_map.geojson");
     if (!response.ok) return;
     const geojson = await response.json();
+
+    // Build probability map from barangay_results (new format) or legacy fields
     const probMap = new Map<string, number>();
-    if (prediction.barangays && prediction.flood_probability) {
+    if (prediction.barangay_results?.length) {
+      (prediction.barangay_results as any[]).forEach((b: any) =>
+        probMap.set((b.barangay as string).toLowerCase(), b.flood_probability));
+    } else if (prediction.barangays && prediction.flood_probability) {
       (prediction.barangays as string[]).forEach((name: string, i: number) =>
         probMap.set(name.toLowerCase(), prediction.flood_probability[i]));
     } else if (prediction.barangayHazards) {
       prediction.barangayHazards.forEach((h: any) =>
         probMap.set(h.barangayName.toLowerCase(), h.floodProbability));
     }
+
     const colored = {
       ...geojson,
       features: geojson.features.map((f: any) => {
         const name = (
-          f.properties?.bgy_name ?? f.properties?.name ??
+          f.properties?.ADM4_EN ?? f.properties?.bgy_name ?? f.properties?.name ??
           f.properties?.BGY_NAME ?? f.properties?.NAME ?? ""
         ).toLowerCase();
         return { ...f, properties: { ...f.properties, flood_prob: probMap.get(name) ?? null } };
       }),
     };
+
     map.addSource("hazard-source", { type: "geojson", data: colored });
     map.addLayer({
       id: "hazard-fill", type: "fill", source: "hazard-source",
-      paint: {
-        "fill-color": ["case",
-          ["==", ["get", "flood_prob"], null], "#cccccc",
-          [">=", ["get", "flood_prob"], 0.75], "#7c3aed",
-          [">=", ["get", "flood_prob"], 0.50], "#dc2626",
-          [">=", ["get", "flood_prob"], 0.25], "#f97316",
-          [">=", ["get", "flood_prob"], 0.10], "#eab308",
-          "#22c55e"],
-        "fill-opacity": 0.5,
-      },
+      paint: { "fill-color": HAZARD_COLOR_EXPR, "fill-opacity": 0.55 },
     });
     map.addLayer({
       id: "hazard-outline", type: "line", source: "hazard-source",
-      paint: {
-        "line-color": ["case",
-          ["==", ["get", "flood_prob"], null], "#999999",
-          [">=", ["get", "flood_prob"], 0.75], "#7c3aed",
-          [">=", ["get", "flood_prob"], 0.50], "#dc2626",
-          [">=", ["get", "flood_prob"], 0.25], "#f97316",
-          [">=", ["get", "flood_prob"], 0.10], "#eab308",
-          "#22c55e"],
-        "line-width": 1.5, "line-opacity": 0.8,
-      },
+      paint: { "line-color": HAZARD_COLOR_EXPR, "line-width": 1.5, "line-opacity": 0.8 },
     });
   } catch (e) {
     console.warn("[MapContent] Could not render hazard overlay:", e);
@@ -1241,6 +1326,7 @@ function parseColor(color: string): [number, number, number] {
 }
 
 // =============================================================================
+// =============================================================================
 // FACILITY CLICK POPUP
 // =============================================================================
 
@@ -1249,16 +1335,16 @@ function FacilityPopup({ facility, onClose }: { facility: SelectedFacility; onCl
   const floodColor =
     facility.floodProb === null ? "#9ca3af"
       : facility.floodProb >= 0.75 ? "#7c3aed"
-      : facility.floodProb >= 0.5 ? "#dc2626"
+      : facility.floodProb >= 0.5  ? "#dc2626"
       : facility.floodProb >= 0.25 ? "#f97316"
-      : facility.floodProb >= 0.1 ? "#eab308"
+      : facility.floodProb >= 0.1  ? "#eab308"
       : "#22c55e";
   const floodLabel =
     facility.floodProb === null ? "No data"
       : facility.floodProb >= 0.75 ? "Very High"
-      : facility.floodProb >= 0.5 ? "High"
+      : facility.floodProb >= 0.5  ? "High"
       : facility.floodProb >= 0.25 ? "Moderate"
-      : facility.floodProb >= 0.1 ? "Low"
+      : facility.floodProb >= 0.1  ? "Low"
       : "Minimal";
 
   return (
