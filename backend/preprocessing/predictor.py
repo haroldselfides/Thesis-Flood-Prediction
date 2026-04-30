@@ -23,6 +23,12 @@ import xgboost as xgb
 
 from ecmwf.ecmwf import RainfallForecast
 
+# from preprocessing.rainfall_scaling import (
+#     apply_rainfall_scaling,
+#     get_model_rain_input,
+#     get_rainfall_label,
+# )
+
 logger = logging.getLogger(__name__)
 
 RAIN_GATE_1H  = 0.5
@@ -213,39 +219,6 @@ def run_prediction(
         },
     }
 
-"""
-RAINFALL GATE FIX — Add to predictor.py
-========================================
-Temporary fix for the cliff-edge at rain_1h = 0.556mm.
-
-Problem:
-  Model was trained with minimum non-zero rainfall = 0.556mm (LPA_Feb2023).
-  Any rain >= 0.556mm triggers full terrain-based probability (up to 0.83).
-  At 1mm simulation, everywhere looks Very High — not useful for presentation.
-
-Fix — Probability scaling by rainfall intensity:
-  Multiply raw XGBoost probability by a rainfall scale factor.
-  This preserves spatial variation (terrain still drives WHICH points are high)
-  while making probability proportional to rainfall intensity.
-
-  Scale factors:
-    0.0mm        -> 0.00  (gate — everything Very Low)
-    0.556–2.0mm  -> 0.25  (only extreme terrain shows Low)
-    2.0–4.0mm    -> 0.40  (low-lying areas start showing Moderate)
-    4.0–8.0mm    -> 0.60  (widespread Low-Moderate)
-    8.0–15.0mm   -> 0.75  (High in flood-prone zones)
-    15.0–25.0mm  -> 0.90  (Very High in worst terrain)
-    25.0mm+      -> 1.00  (full model output — typhoon conditions)
-
-This is a PRESENTATION FIX only. The proper fix is retraining with
-gradient rows (xgboost_training_rainfall_conditioned_v2.csv).
-
-USAGE — add to run_prediction() in predictor.py, after XGBoost inference:
-
-    proba = model.predict_proba(X_df.values)[:, 1]
-    proba = apply_rainfall_scaling(proba, rain_1h)   # ← ADD THIS LINE
-"""
-
 
 def get_rainfall_scale_factor(rain_1h: float) -> float:
     """
@@ -278,19 +251,6 @@ def apply_rainfall_scaling(proba: "np.ndarray", rain_1h: float) -> "np.ndarray":
     scale = get_rainfall_scale_factor(rain_1h)
     return proba * scale
 
-
-# ── Integration point in predictor.py ────────────────────────────────────────
-# Find this block in run_prediction():
-#
-#   proba = model.predict_proba(X_df.values)[:, 1]
-#
-# Replace with:
-#
-#   proba = model.predict_proba(X_df.values)[:, 1]
-#   proba = apply_rainfall_scaling(proba, rain_1h)
-#
-# That's the only change needed. Everything else stays the same.
-# ─────────────────────────────────────────────────────────────────────────────
 
 
 # ── Simulation preset rainfall values ────────────────────────────────────────

@@ -1,4 +1,5 @@
 {
   "/page": "app/page.js",
-  "/api/predict/route": "app/api/predict/route.js"
+  "/api/predict/simulate/route": "app/api/predict/simulate/route.js",
+  "/api/ecmwf/route": "app/api/ecmwf/route.js"
 }
